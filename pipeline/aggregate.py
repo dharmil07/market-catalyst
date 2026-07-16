@@ -11,7 +11,7 @@ def _date_span(values) -> dict:
 
 
 def build_meta(*, insider, served, corp, pref, raw_counts, dedup, merge,
-               corp_merge, value_stats, unmapped) -> dict:
+               corp_merge, value_stats, date_stats, unmapped) -> dict:
     """Assemble the meta.json structure from final data + pipeline stats."""
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -62,6 +62,7 @@ def build_meta(*, insider, served, corp, pref, raw_counts, dedup, merge,
             },
             "value_status": dict(Counter(r["value_status"] for r in served)),
             "value_status_raw": value_stats,
+            "dates_clamped": date_stats.get("clamped", 0),
             "transaction_dates": _date_span(r["date_from"] for r in served),
             "full_transaction_dates": _date_span(r["date_from"] for r in insider),
         },

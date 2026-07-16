@@ -4,8 +4,8 @@
 #
 #   ./update.sh                      # auto commit message
 #   ./update.sh "Add June BSE file"  # custom commit message
-#   ./update.sh --fetch              # also pull fresh preferential-issue data
-#                                    # from the NSE API before ingesting
+#   ./update.sh --fetch              # also pull fresh preferential-issue and
+#                                    # insider data from the NSE API first
 set -euo pipefail
 cd "$(dirname "$0")"
 
@@ -13,6 +13,9 @@ if [ "${1:-}" = "--fetch" ]; then
   shift
   echo "▶ Fetching NSE preferential issues"
   python3 pipeline/fetch_nse_pref.py
+  echo
+  echo "▶ Fetching NSE insider trading (trailing quarter)"
+  python3 pipeline/fetch_nse_insider.py --days 90
   echo
 fi
 

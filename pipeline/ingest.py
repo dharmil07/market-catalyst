@@ -60,6 +60,9 @@ def run() -> dict:
                   "corp_nse": len(corp_nse), "pref": pref_raw}
     corp, corp_merge = match.merge_corp_actions(corp_bse, corp_nse)
 
+    # Sanitize dates before any matching: dedup/merge keys include date_from,
+    # so a typo'd year must be repaired first or twins won't pair up.
+    date_stats = sanitize.sanitize_dates(bse + nse)
     # Sanitize values across the combined pool so twin-repair can borrow a sane
     # value from either feed before any rows are collapsed.
     value_stats = sanitize.sanitize(bse + nse)
@@ -78,7 +81,7 @@ def run() -> dict:
         raw_counts=raw_counts,
         dedup={"bse": bse_dedup, "nse": nse_dedup}, merge=merge_stats,
         corp_merge=corp_merge,
-        value_stats=value_stats, unmapped=nz.unmapped(),
+        value_stats=value_stats, date_stats=date_stats, unmapped=nz.unmapped(),
     )
     meta["insider"]["served"].update(window_months=SERVE_MONTHS, cutoff=cutoff)
 

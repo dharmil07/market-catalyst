@@ -73,7 +73,9 @@ def parse(path: str | Path) -> Iterator[dict]:
             "post_pct": nz.parse_num(col(r, "% POST")),
             "date_from": nz.iso(nz.parse_date(col(r, "ACQUISITION FROM"))),
             "date_to": nz.iso(nz.parse_date(col(r, "ACQUISITION TO"))),
-            "date_intimation": nz.iso(nz.parse_date(col(r, "TIMATION"))),
+            # Portal downloads say "INTIMATION"; the API's CSV says "INITMATION".
+            "date_intimation": nz.iso(nz.parse_date(
+                col(r, "TIMATION") or col(r, "INITMATION"))),
             "is_derivative": is_derivative,
             "exchange_traded": col(r, "EXCHANGE"),
             "regulation": regulation if regulation not in ("", "-") else None,

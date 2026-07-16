@@ -177,6 +177,32 @@ def test_merged_rows_carry_nse_xbrl():
     assert sum(1 for r in both if r["xbrl"]) > 0.9 * len(both)
 
 
+def test_impossible_dates_clamped_to_filing_evidence():
+    # Real typo patterns from NSE data: a year mistyped into the future must be
+    # clamped to the broadcast/intimation evidence, never dropped or served.
+    recs = [
+        # start-after-end (from typo'd one year forward)
+        {"date_from": "2026-11-26", "date_to": "2025-11-26",
+         "date_intimation": "2025-11-27", "broadcast": "28-Nov-2025 10:43"},
+        # every filer-entered date typo'd; exchange broadcast is the backstop
+        {"date_from": "2026-11-09", "date_to": "2026-11-09",
+         "date_intimation": "2026-11-10", "broadcast": "11-Mar-2026 15:17"},
+        # BSE-style row (no broadcast): intimation is the ceiling
+        {"date_from": "2025-07-24", "date_to": "2028-07-28",
+         "date_intimation": "2025-07-29", "broadcast": None},
+        # sane row untouched
+        {"date_from": "2026-01-05", "date_to": "2026-01-06",
+         "date_intimation": "2026-01-07", "broadcast": "07-Jan-2026 12:00"},
+    ]
+    stats = sanitize.sanitize_dates(recs)
+    assert stats == {"clamped": 3}
+    assert recs[0]["date_from"] == recs[0]["date_to"] == "2025-11-26"
+    assert (recs[1]["date_from"] == recs[1]["date_to"]
+            == recs[1]["date_intimation"] == "2026-03-11")
+    assert recs[2]["date_to"] == "2025-07-29" and recs[2]["date_from"] == "2025-07-24"
+    assert recs[3]["date_from"] == "2026-01-05" and recs[3]["date_to"] == "2026-01-06"
+
+
 def _ca(source, company, category, ex_date, **extra):
     return {"source": source, "company": company, "company_norm": nz.normco(company),
             "category": category, "ex_date": ex_date, "symbol": extra.pop("symbol", ""),

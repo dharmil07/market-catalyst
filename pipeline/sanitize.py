@@ -23,6 +23,7 @@ from __future__ import annotations
 
 from statistics import median
 
+from . import normalize as nz
 from .match import transaction_key
 
 # Bounds for an implied price (₹/share) we'll trust when building per-company
@@ -36,6 +37,36 @@ _PLACEHOLDER_MAX_VALUE = 10.0
 _PLACEHOLDER_MIN_SHARES = 100
 # Relative rule: implied price far below the company's typical implied price.
 _PLACEHOLDER_RATIO = 0.02
+
+
+def sanitize_dates(records: list[dict]) -> dict:
+    """Clamp impossible transaction dates using in-record evidence. Mutates
+    `records`; returns stats.
+
+    Filers typo years (a Nov-2025 trade filed as Nov-2026, which would then sit
+    at the top of every "recent" view and drag the serve window into the
+    future). Two invariants need no wall clock: a transaction can't start after
+    it ends, and no disclosed date can postdate the filing itself — the
+    exchange-set broadcast timestamp when present, else the intimation date.
+    Violations are clamped to the evidence date; the row is never dropped (the
+    disclosure is real, only its date is mistyped).
+    """
+    clamped = 0
+    for rec in records:
+        before = (rec.get("date_from"), rec.get("date_to"),
+                  rec.get("date_intimation"))
+        if rec.get("date_from") and rec.get("date_to") \
+                and rec["date_from"] > rec["date_to"]:
+            rec["date_from"] = rec["date_to"]
+        filed = nz.iso(nz.parse_date(rec.get("broadcast") or ""))
+        for field in ("date_intimation", "date_to", "date_from"):
+            ceiling = filed or rec.get("date_intimation")
+            if ceiling and rec.get(field) and rec[field] > ceiling:
+                rec[field] = ceiling
+        if (rec.get("date_from"), rec.get("date_to"),
+                rec.get("date_intimation")) != before:
+            clamped += 1
+    return {"clamped": clamped}
 
 
 def _implied(rec: dict) -> float | None:

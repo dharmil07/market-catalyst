@@ -54,7 +54,10 @@ JSON and does all filtering/aggregation client-side.
    and overlapping date ranges are fine — duplicates collapse in the dedup step):
    - `data/raw/insider/bse/`
    - `data/raw/insider/nse/` — use the regular *Insider Trading* export; the "Annual PIT"
-     export is a coarser, incompatible format and the pipeline rejects it with an error.
+     export (what the website serves for 1-year ranges) is a coarser, incompatible format
+     and the pipeline rejects it with an error. Easier: skip the manual download and run
+     `python3 pipeline/fetch_nse_insider.py` — it pulls the regular format straight from
+     the NSE API in 3-month chunks (`./update.sh --fetch` does this too).
    - `data/raw/corporate_actions/bse/`
    - `data/raw/corporate_actions/nse/` — events listed on both exchanges are collapsed
      into one `BSE+NSE` record (matched on company + category + ex-date).
