@@ -11,7 +11,7 @@ def _date_span(values) -> dict:
 
 
 def build_meta(*, insider, served, corp, pref, raw_counts, dedup, merge,
-               value_stats, unmapped) -> dict:
+               corp_merge, value_stats, unmapped) -> dict:
     """Assemble the meta.json structure from final data + pipeline stats."""
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -33,7 +33,15 @@ def build_meta(*, insider, served, corp, pref, raw_counts, dedup, merge,
             },
             "corporate_actions_bse": {
                 "rows_raw": raw_counts.get("corp", 0),
-                "event_dates": _date_span(r["ex_date"] for r in corp),
+                "event_dates": _date_span(
+                    r["ex_date"] for r in corp if r["source"] != "NSE"
+                ),
+            },
+            "corporate_actions_nse": {
+                "rows_raw": raw_counts.get("corp_nse", 0),
+                "event_dates": _date_span(
+                    r["ex_date"] for r in corp if r["source"] != "BSE"
+                ),
             },
             "preferential_nse": {
                 "rows_raw": raw_counts.get("pref", 0),
@@ -59,6 +67,8 @@ def build_meta(*, insider, served, corp, pref, raw_counts, dedup, merge,
         },
         "corporate_actions": {
             "records": len(corp),
+            "by_source": dict(Counter(r["source"] for r in corp)),
+            "cross_exchange": corp_merge,
             "buckets": dict(Counter(r["category"] for r in corp)),
             "event_dates": _date_span(r["ex_date"] for r in corp),
         },

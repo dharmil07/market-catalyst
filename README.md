@@ -49,12 +49,15 @@ JSON and does all filtering/aggregation client-side.
    - BSE insider: <https://www.bseindia.com/corporates/insider_trading_new>
    - NSE insider: <https://www.nseindia.com/companies-listing/corporate-filings-insider-trading>
    - BSE corporate actions: <https://www.bseindia.com/corporates/corporate_act>
+   - NSE corporate actions: <https://www.nseindia.com/companies-listing/corporate-actions>
 2. Put them in the matching folder (filenames don't matter; all CSVs in a folder are read,
    and overlapping date ranges are fine — duplicates collapse in the dedup step):
    - `data/raw/insider/bse/`
    - `data/raw/insider/nse/` — use the regular *Insider Trading* export; the "Annual PIT"
      export is a coarser, incompatible format and the pipeline rejects it with an error.
    - `data/raw/corporate_actions/bse/`
+   - `data/raw/corporate_actions/nse/` — events listed on both exchanges are collapsed
+     into one `BSE+NSE` record (matched on company + category + ex-date).
 
    However much history the raw files hold, the dashboard serves only the most recent
    **18 months** (full-history BSE dumps reach 170k+ rows — too big to ship to a browser).

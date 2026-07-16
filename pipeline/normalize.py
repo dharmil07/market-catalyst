@@ -323,6 +323,10 @@ def corp_action_bucket(purpose: str) -> str:
     p = (purpose or "").lower()
     if not p:
         return "OTHER"
+    # REIT/InvIT unit distributions before the dividend check: NSE phrases them
+    # "Distribution - Rs X Per Unit ..." with dividend/interest as components.
+    if "income distribution" in p or ("distribution" in p and "unit" in p):
+        return "REIT_INVIT"
     if "dividend" in p:
         return "DIVIDEND"
     if "bonus" in p:
@@ -340,7 +344,7 @@ def corp_action_bucket(purpose: str) -> str:
         return "PREFERENTIAL"
     if "open offer" in p or "delisting" in p:
         return "OPEN_OFFER"
-    if "income distribution" in p or "invit" in p or "reit" in p:
+    if "invit" in p or "reit" in p:
         return "REIT_INVIT"
     if any(w in p for w in ("resolution plan", "suspension", "insolvency",
                             "liquidation", "reduction of capital", "consolidation")):

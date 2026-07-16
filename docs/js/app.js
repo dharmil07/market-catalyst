@@ -54,7 +54,7 @@ function switchTab(tab, params) {
 
 function renderFreshness() {
   const m = state.meta; if (!m) return;
-  const ib = m.sources.insider_bse, inn = m.sources.insider_nse, ca = m.sources.corporate_actions_bse;
+  const ib = m.sources.insider_bse, inn = m.sources.insider_nse, ca = m.corporate_actions;
   const pf = m.sources.preferential_nse;
   $("#freshness").innerHTML =
     `Insider BSE → <b>${fmtDate(ib.transaction_dates?.max)}</b> · ` +
@@ -100,6 +100,8 @@ function renderTrust() {
       ["BSE latest intimation", fmtDate(m.sources.insider_bse.latest_intimation)],
       ["NSE latest intimation", fmtDate(m.sources.insider_nse.latest_intimation)],
       ["Corp-action events", fmtInt(m.corporate_actions.records)],
+      ["Corp actions matched BSE+NSE", fmtInt(m.corporate_actions.by_source?.["BSE+NSE"] || 0)],
+      ["Corp actions NSE-only", fmtInt(m.corporate_actions.by_source?.NSE || 0)],
     ].filter(Boolean)),
   );
   const p = m.preferential;

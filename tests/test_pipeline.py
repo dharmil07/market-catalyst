@@ -19,12 +19,14 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 from pipeline import match, normalize as nz, sanitize  # noqa: E402
-from pipeline.parsers import bse_corpactions, bse_insider, nse_insider, nse_pref  # noqa: E402
+from pipeline.parsers import (bse_corpactions, bse_insider, nse_corpactions,  # noqa: E402
+                              nse_insider, nse_pref)
 
 FIX = ROOT / "tests/fixtures"
 BSE_CSV = FIX / "BSE_SEBI_PIT170626.csv"
 NSE_CSV = FIX / "NSE_CF-Insider-Trading-17-03-2026-to-17-06-2026.csv"
 CORP_CSV = FIX / "BSE_All_Corporate_Actions.csv"
+NSE_CORP_CSV = FIX / "NSE_CF-CA-equities-15-07-2025-to-15-07-2026.csv"
 PREF_JSON = FIX / "NSE_PREF_01-01-2026_to_02-07-2026.json"
 
 
@@ -73,6 +75,12 @@ def test_corp_action_bucketing():
     assert nz.corp_action_bucket("Buy Back of Shares") == "BUYBACK"
     assert nz.corp_action_bucket("Right Issue of Equity Shares") == "RIGHTS"
     assert nz.corp_action_bucket("Interim Dividend - Rs 5") == "DIVIDEND"
+    # NSE phrases REIT/InvIT payouts as unit distributions with dividend and
+    # interest as components — they must not fall into DIVIDEND/DEBT.
+    assert nz.corp_action_bucket(
+        "Distribution - Rs 2 Per Unit Consisting Of Interest - Re 1.57 Per Unit "
+        "/ Dividend - Re 0.28 Per Unit") == "REIT_INVIT"
+    assert nz.corp_action_bucket("Income Distribution (InvIT)") == "REIT_INVIT"
 
 
 # --------------------------------------------------------------------------- #
@@ -83,6 +91,16 @@ def test_parser_row_counts():
     assert len(list(bse_insider.parse(BSE_CSV))) == 4815
     assert len(list(nse_insider.parse(NSE_CSV))) == 1592
     assert len(list(bse_corpactions.parse(CORP_CSV))) == 675
+    assert len(list(nse_corpactions.parse(NSE_CORP_CSV))) == 1977
+
+
+def test_nse_corpactions_records_keyable():
+    # Every NSE calendar row must be mergeable: symbol, company key and ex-date
+    # present (the feed has no security code — cross-exchange identity relies
+    # on company_norm + category + ex_date).
+    recs = list(nse_corpactions.parse(NSE_CORP_CSV))
+    assert all(r["symbol"] and r["company_norm"] and r["ex_date"] for r in recs)
+    assert all(match.corp_action_key(r) is not None for r in recs)
 
 
 def test_no_unmapped_vocabulary_in_real_data():
@@ -157,6 +175,33 @@ def test_merged_rows_carry_nse_xbrl():
     both = [r for r in merged if r["source"] == "BSE+NSE"]
     assert both, "expected some BSE+NSE merged rows"
     assert sum(1 for r in both if r["xbrl"]) > 0.9 * len(both)
+
+
+def _ca(source, company, category, ex_date, **extra):
+    return {"source": source, "company": company, "company_norm": nz.normco(company),
+            "category": category, "ex_date": ex_date, "symbol": extra.pop("symbol", ""),
+            **extra}
+
+
+def test_corp_actions_cross_exchange_merge():
+    bse = [_ca("BSE", "Anuh Pharma Ltd", "BONUS", "2025-07-15", security_code="506260"),
+           _ca("BSE", "Foo Ltd", "DIVIDEND", "2025-08-01"),
+           _ca("BSE", "Foo Ltd", "DIVIDEND", "2025-08-01")]  # final + special twin
+    nse = [_ca("NSE", "Anuh Pharma Limited", "BONUS", "2025-07-15", symbol="ANUHPHR"),
+           _ca("NSE", "Foo Limited", "DIVIDEND", "2025-08-01"),
+           _ca("NSE", "Bar Limited", "SPLIT", "2025-09-01", symbol="BAR")]
+    merged, stats = match.merge_corp_actions(bse, nse)
+    assert stats == {"merged": 2, "nse_only": 1}
+    assert len(merged) == 4  # 3 BSE rows kept + 1 NSE-only appended
+    anuh = next(r for r in merged if r["company_norm"] == nz.normco("Anuh Pharma Ltd"))
+    assert anuh["source"] == "BSE+NSE"
+    assert anuh["security_code"] == "506260"  # BSE fields win
+    assert anuh["symbol"] == "ANUHPHR"        # NSE contributes the symbol
+    # Twin BSE events on one ex-date: only one absorbs the single NSE row.
+    foo_sources = sorted(r["source"] for r in merged
+                         if r["company_norm"] == nz.normco("Foo Ltd"))
+    assert foo_sources == ["BSE", "BSE+NSE"]
+    assert [r for r in merged if r["source"] == "NSE"][0]["symbol"] == "BAR"
 
 
 # --------------------------------------------------------------------------- #

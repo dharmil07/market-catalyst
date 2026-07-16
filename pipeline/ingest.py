@@ -34,8 +34,8 @@ SERVE_FIELDS = (
 )
 
 from pipeline import aggregate, match, normalize as nz, sanitize  # noqa: E402
-from pipeline.parsers import (bse_corpactions, bse_insider, nse_insider,  # noqa: E402
-                              nse_pref)
+from pipeline.parsers import (bse_corpactions, bse_insider, nse_corpactions,  # noqa: E402
+                              nse_insider, nse_pref)
 from pipeline.util import find_csvs, find_files  # noqa: E402
 RAW = ROOT / "data" / "raw"
 OUT = ROOT / "docs" / "data"
@@ -53,10 +53,12 @@ def run() -> dict:
 
     bse = _parse_all(RAW / "insider" / "bse", bse_insider.parse)
     nse = _parse_all(RAW / "insider" / "nse", nse_insider.parse)
-    corp = _parse_all(RAW / "corporate_actions" / "bse", bse_corpactions.parse)
+    corp_bse = _parse_all(RAW / "corporate_actions" / "bse", bse_corpactions.parse)
+    corp_nse = _parse_all(RAW / "corporate_actions" / "nse", nse_corpactions.parse)
     pref, pref_raw = _load_preferential()
-    raw_counts = {"bse": len(bse), "nse": len(nse), "corp": len(corp),
-                  "pref": pref_raw}
+    raw_counts = {"bse": len(bse), "nse": len(nse), "corp": len(corp_bse),
+                  "corp_nse": len(corp_nse), "pref": pref_raw}
+    corp, corp_merge = match.merge_corp_actions(corp_bse, corp_nse)
 
     # Sanitize values across the combined pool so twin-repair can borrow a sane
     # value from either feed before any rows are collapsed.
@@ -75,6 +77,7 @@ def run() -> dict:
         insider=insider, served=served, corp=corp, pref=pref,
         raw_counts=raw_counts,
         dedup={"bse": bse_dedup, "nse": nse_dedup}, merge=merge_stats,
+        corp_merge=corp_merge,
         value_stats=value_stats, unmapped=nz.unmapped(),
     )
     meta["insider"]["served"].update(window_months=SERVE_MONTHS, cutoff=cutoff)
@@ -147,7 +150,8 @@ def _print_summary(meta: dict) -> None:
     print(f"  Value status:         {ins['value_status']}")
     print(f"  Insider date range:   {ins['transaction_dates']}")
     ca = meta["corporate_actions"]
-    print(f"  Corp actions:         {ca['records']}  {ca['buckets']}")
+    print(f"  Corp actions:         {ca['records']}  {ca['by_source']}")
+    print(f"  Corp-action buckets:  {ca['buckets']}")
     pf = meta["preferential"]
     print(f"  Preferential issues:  {pf['records']}  "
           f"(₹{pf['issue_size_total'] / 1e7:,.0f} cr, "

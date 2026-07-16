@@ -101,3 +101,47 @@ def merge_cross_feed(primary: list[dict], secondary: list[dict]) -> tuple[list[d
             primary.append(rec)
 
     return primary, {"merged": merged, "nse_only": nse_only}
+
+
+def corp_action_key(rec: dict):
+    """Cross-exchange corp-action identity, or None if the record can't be keyed.
+
+    Purpose free-text differs between exchanges ("Bonus issue 1:1" on BSE vs
+    "Bonus 1:1" on NSE), so the category bucket stands in for it.
+    """
+    if not rec.get("company_norm") or not rec.get("ex_date"):
+        return None
+    return (rec["company_norm"], rec["category"], rec["ex_date"])
+
+
+def merge_corp_actions(primary: list[dict], secondary: list[dict]) -> tuple[list[dict], dict]:
+    """Merge the NSE corporate-actions calendar into the BSE one.
+
+    BSE rows win (they carry the security code and no-delivery/payment dates);
+    a matching NSE row is folded in, contributing its trading symbol. Matching
+    consumes primary rows one-for-one so twin events on the same ex-date (e.g.
+    a final plus a special dividend) don't over-collapse. Unmatched NSE rows —
+    NSE-only listings — are appended as their own records.
+    """
+    index: dict[tuple, list[dict]] = {}
+    for rec in primary:
+        key = corp_action_key(rec)
+        if key is not None:
+            index.setdefault(key, []).append(rec)
+
+    merged = 0
+    nse_only = 0
+    for rec in secondary:
+        key = corp_action_key(rec)
+        candidates = index.get(key) if key is not None else None
+        if candidates:
+            merged += 1
+            match = candidates.pop(0)
+            match["source"] = "BSE+NSE"
+            if not match.get("symbol") and rec.get("symbol"):
+                match["symbol"] = rec["symbol"]
+        else:
+            nse_only += 1
+            primary.append(rec)
+
+    return primary, {"merged": merged, "nse_only": nse_only}
