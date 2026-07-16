@@ -58,6 +58,14 @@ JSON and does all filtering/aggregation client-side.
      and the pipeline rejects it with an error. Easier: skip the manual download and run
      `python3 pipeline/fetch_nse_insider.py` — it pulls the regular format straight from
      the NSE API in 3-month chunks (`./update.sh --fetch` does this too).
+
+     **Known upstream gap (as of Jul 2026):** NSE stopped feeding the regular dataset on
+     02-May-2026 and now publishes insider filings only in the coarse "PIT Annual" system
+     (no symbol/mode/XBRL; sales merged with pledge invocations — the very reasons the
+     pipeline rejects that format). Decision: stay BSE-covered — dual-listed companies are
+     fully current via BSE; NSE-only listings have no insider data after early May 2026.
+     The "NSE filed" date on the dashboard reflects this, not a stale download. Revisit
+     (ingest Annual as a supplementary, deduped feed) if the gap starts to matter.
    - `data/raw/corporate_actions/bse/`
    - `data/raw/corporate_actions/nse/` — events listed on both exchanges are collapsed
      into one `BSE+NSE` record (matched on company + category + ex-date).
