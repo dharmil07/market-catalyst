@@ -75,9 +75,10 @@ def run() -> dict:
         rec["id"] = i
 
     served, cutoff = _serve_window(insider)
+    corp_served = _serve_corp_window(corp)
 
     meta = aggregate.build_meta(
-        insider=insider, served=served, corp=corp, pref=pref,
+        insider=insider, served=served, corp=corp_served, pref=pref,
         raw_counts=raw_counts,
         dedup={"bse": bse_dedup, "nse": nse_dedup}, merge=merge_stats,
         corp_merge=corp_merge,
