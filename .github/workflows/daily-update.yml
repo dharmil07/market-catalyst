@@ -35,6 +35,10 @@ jobs:
       - name: Fetch BSE insider trading
         run: python3 pipeline/fetch_bse_insider.py
         continue-on-error: true
+        
+      - name: Fetch BSE corporate actions
+        run: python3 pipeline/fetch_bse_corpactions.py
+        continue-on-error: true
 
       - name: Ingest raw CSVs → docs/data/*.json
         run: python3 pipeline/ingest.py
