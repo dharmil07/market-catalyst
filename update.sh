@@ -17,6 +17,9 @@ if [ "${1:-}" = "--fetch" ]; then
   echo "▶ Fetching NSE insider trading (trailing quarter)"
   python3 pipeline/fetch_nse_insider.py --days 90
   echo
+  echo "▶ Fetching BSE insider trading"
+  python3 pipeline/fetch_bse_insider.py
+  echo
 fi
 
 echo "▶ Ingesting raw CSVs → docs/data/*.json"
