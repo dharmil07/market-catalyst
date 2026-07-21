@@ -159,11 +159,14 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
 .mini-table { width: 100%; font-size: 12.5px; }
 .mini-table td { padding: 5px 8px; }
 
+/* Insider Trading — Person column */
 #insiderTable th:nth-child(4),
 #insiderTable td:nth-child(4) {
-  width: 240px;
-  max-width: 240px;
+  width: 300px;
+  max-width: 300px;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* badges & flags inside tables */
