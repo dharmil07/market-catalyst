@@ -22,7 +22,7 @@ sys.path.insert(0, str(ROOT))
 # exports run to 170k+ rows (back to 2001) — as JSON that is >100 MB, which a
 # browser can't reasonably load and GitHub refuses to store. The raw CSVs keep
 # the full history; widen this window and re-run if you want more served.
-SERVE_MONTHS = 18
+SERVE_MONTHS = 12
 
 # Fields the site actually reads (see docs/js/*). Raw-echo and pipeline-debug
 # fields stay out of the served JSON to keep the download small.
@@ -87,7 +87,7 @@ def run() -> dict:
 
     OUT.mkdir(parents=True, exist_ok=True)
     _write(OUT / "insider.json", served)
-    _write(OUT / "corporate_actions.json", corp)
+    _write(OUT / "corporate_actions.json", _serve_corp_window(corp))
     _write(OUT / "preferential.json", pref)
     # Scaffolded category — empty until the user supplies exports.
     _write(OUT / "open_offers.json", [])
@@ -98,9 +98,7 @@ def run() -> dict:
 
 def _serve_window(insider: list[dict]) -> tuple[list[dict], str | None]:
     """Slim the final records to the SERVE_MONTHS most recent transactions.
-
-    Anchored on the newest transaction date in the data (not the clock), so a
-    stale dataset still serves a full window instead of shrinking to nothing.
+    ...
     """
     dates = sorted(r["date_from"] for r in insider if r["date_from"])
     if not dates:
@@ -113,6 +111,20 @@ def _serve_window(insider: list[dict]) -> tuple[list[dict], str | None]:
     cutoff = f"{y:04d}-{m:02d}-{d:02d}"
     return [{k: r.get(k) for k in SERVE_FIELDS}
             for r in insider if r["date_from"] and r["date_from"] >= cutoff], cutoff
+
+
+def _serve_corp_window(corp_actions: list[dict]) -> list[dict]:
+    """Slim corporate actions to the SERVE_MONTHS most recent by ex-date."""
+    dates = sorted(r["ex_date"] for r in corp_actions if r["ex_date"])
+    if not dates:
+        return corp_actions
+    y, m, d = map(int, dates[-1].split("-"))
+    m -= SERVE_MONTHS
+    while m <= 0:
+        m += 12
+        y -= 1
+    cutoff = f"{y:04d}-{m:02d}-{d:02d}"
+    return [r for r in corp_actions if r["ex_date"] and r["ex_date"] >= cutoff]
 
 
 def _load_preferential() -> tuple[list[dict], int]:
