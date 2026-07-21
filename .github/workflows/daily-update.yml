@@ -31,6 +31,10 @@ jobs:
       - name: Fetch NSE insider trading (trailing quarter)
         run: python3 pipeline/fetch_nse_insider.py --days 90
         continue-on-error: true
+        
+      - name: Fetch BSE insider trading
+        run: python3 pipeline/fetch_bse_insider.py
+        continue-on-error: true
 
       - name: Ingest raw CSVs → docs/data/*.json
         run: python3 pipeline/ingest.py
