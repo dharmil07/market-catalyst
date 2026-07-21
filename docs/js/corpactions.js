@@ -125,7 +125,7 @@ function renderTable() {
     frag.append(el("tr", {}, [
       el("td", {}, star),
       el("td", {}, [el("div", {}, r.company), r.symbol ? el("small", {}, r.symbol) : null]),
-      el("td", {}, r.purpose),
+      el("td", { title: r.purpose || "" }, r.purpose),
       el("td", {}, label(r.category)),
       el("td", {}, fmtDate(r.ex_date)),
       el("td", {}, fmtDate(r.record_date)),
