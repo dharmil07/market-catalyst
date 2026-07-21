@@ -159,6 +159,13 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
 .mini-table { width: 100%; font-size: 12.5px; }
 .mini-table td { padding: 5px 8px; }
 
+#insiderTable th:nth-child(4),
+#insiderTable td:nth-child(4) {
+  width: 240px;
+  max-width: 240px;
+  white-space: nowrap;
+}
+
 /* badges & flags inside tables */
 .tag { font-size: 10.5px; padding: 1px 6px; border-radius: 9px; border: 1px solid var(--line); }
 .tag.buy { color: var(--buy); border-color: var(--buy); }
