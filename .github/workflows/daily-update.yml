@@ -2,7 +2,7 @@ name: Daily data refresh
 
 on:
   schedule:
-    # 19:00 IST, Mon–Fri (13:00 UTC). NSE closes 15:30 IST; this leaves a
+    # 19:00 IST, Mon–Fri (13:30 UTC). NSE closes 15:30 IST; this leaves a
     # buffer for same-day filings to land. Runs fine on holidays/weekends
     # too — it just finds no changes and exits cleanly.
     - cron: '30 13 * * 1-5'
