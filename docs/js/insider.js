@@ -265,7 +265,7 @@ function renderTable() {
       el("td", {}, star),
       el("td", {}, fmtDate(r.date_from)),
       companyCell,
-      el("td", { title: r.person || "" }, r.person),
+      el("td", {}, r.person),
       el("td", {}, label(r.category)),
       el("td", {}, typeTag),
       el("td", {}, label(r.mode)),
