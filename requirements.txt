@@ -10,3 +10,5 @@
 # Optional: `pytest` also discovers the tests/ files if you prefer its output.
 # Installing it on this (PEP-668 managed) machine needs either a venv
 # (sudo apt install python3.12-venv) or:  pip install --user --break-system-packages pytest
+
+requests>=2.32.0
