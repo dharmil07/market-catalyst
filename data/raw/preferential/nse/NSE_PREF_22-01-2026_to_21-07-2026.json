@@ -1,6 +1,28 @@
 {
  "data": [
   {
+   "amountRaised": "923901000",
+   "appId": "69965",
+   "boardResDate": "21-JUL-2026",
+   "corporateIdentityNum": "L74899DL1994PLC061295",
+   "dateOfAllotmentOfShares": "01-JUL-2026",
+   "dateOfListing": null,
+   "dateOfSubmission": "16-JUL-2026",
+   "dateOfTradingApproval": null,
+   "isin": "INE074B01023",
+   "issueType": "Preferential",
+   "nameOfTheCompany": "PARAMOUNT COMMUNICATIONS LIMITED",
+   "nseSymbol": "PARACABLES",
+   "numberOfEquitySharesListed": "305209814",
+   "offerPricePerSecurity": "42",
+   "revisedFlag": null,
+   "stage": "Listing Stage",
+   "systemDate": "21-JUL-2026",
+   "totalNumOfSharesAllotted": "21997664",
+   "xbrlFileSize": "4.04 KB",
+   "xmlFileName": "https://nsearchives.nseindia.com/corporate/xbrl/PREF_ISSUE_LS_1693823_16072026114702_WEB.xml"
+  },
+  {
    "amountRaised": "0",
    "appId": "68852",
    "boardResDate": "20-JUL-2026",
@@ -309,28 +331,6 @@
    "xmlFileName": "https://nsearchives.nseindia.com/corporate/xbrl/PREF_ISSUE_LS_1692506_14072026060955_WEB.xml"
   },
   {
-   "amountRaised": "16940000",
-   "appId": "69339",
-   "boardResDate": "16-JUL-2026",
-   "corporateIdentityNum": "L45200GJ2014PLC079847",
-   "dateOfAllotmentOfShares": "11-JUN-2026",
-   "dateOfListing": null,
-   "dateOfSubmission": "14-JUL-2026",
-   "dateOfTradingApproval": null,
-   "isin": "INE113X01015",
-   "issueType": "Preferential",
-   "nameOfTheCompany": "Accord Synergy Limited",
-   "nseSymbol": "ACCORD",
-   "numberOfEquitySharesListed": "3472000",
-   "offerPricePerSecurity": "42.35",
-   "revisedFlag": null,
-   "stage": "Listing Stage",
-   "systemDate": "16-JUL-2026",
-   "totalNumOfSharesAllotted": "400000",
-   "xbrlFileSize": "3.88 KB",
-   "xmlFileName": "https://nsearchives.nseindia.com/corporate/xbrl/PREF_ISSUE_LS_1691963_14072026122003_WEB.xml"
-  },
-  {
    "amountRaised": "907000",
    "appId": "67824",
    "boardResDate": "16-JUL-2026",
@@ -351,6 +351,28 @@
    "totalNumOfSharesAllotted": "3600000",
    "xbrlFileSize": "4.02 KB",
    "xmlFileName": "https://nsearchives.nseindia.com/corporate/xbrl/PREF_ISSUE_LS_1666955_14052026021912_WEB.xml"
+  },
+  {
+   "amountRaised": "16940000",
+   "appId": "69339",
+   "boardResDate": "16-JUL-2026",
+   "corporateIdentityNum": "L45200GJ2014PLC079847",
+   "dateOfAllotmentOfShares": "11-JUN-2026",
+   "dateOfListing": null,
+   "dateOfSubmission": "14-JUL-2026",
+   "dateOfTradingApproval": null,
+   "isin": "INE113X01015",
+   "issueType": "Preferential",
+   "nameOfTheCompany": "Accord Synergy Limited",
+   "nseSymbol": "ACCORD",
+   "numberOfEquitySharesListed": "3472000",
+   "offerPricePerSecurity": "42.35",
+   "revisedFlag": null,
+   "stage": "Listing Stage",
+   "systemDate": "16-JUL-2026",
+   "totalNumOfSharesAllotted": "400000",
+   "xbrlFileSize": "3.88 KB",
+   "xmlFileName": "https://nsearchives.nseindia.com/corporate/xbrl/PREF_ISSUE_LS_1691963_14072026122003_WEB.xml"
   },
   {
    "amountRaised": "9000000000",
@@ -705,28 +727,6 @@
    "xmlFileName": "https://nsearchives.nseindia.com/corporate/xbrl/PREF_ISSUE_LS_1672932_26052026125723_WEB.xml"
   },
   {
-   "amountRaised": "15360000",
-   "appId": "69842",
-   "boardResDate": "10-JUL-2026",
-   "corporateIdentityNum": "L36109KA1995PLC017137",
-   "dateOfAllotmentOfShares": "23-JUN-2026",
-   "dateOfListing": null,
-   "dateOfSubmission": "10-JUL-2026",
-   "dateOfTradingApproval": null,
-   "isin": "INE0NVI01020",
-   "issueType": "Preferential",
-   "nameOfTheCompany": "TRANSTEEL SEATING TECHNOLOGIES LIMITED",
-   "nseSymbol": "TRANSTEEL",
-   "numberOfEquitySharesListed": "22440010",
-   "offerPricePerSecurity": "80",
-   "revisedFlag": null,
-   "stage": "Listing Stage",
-   "systemDate": "10-JUL-2026",
-   "totalNumOfSharesAllotted": "192000",
-   "xbrlFileSize": "4.05 KB",
-   "xmlFileName": "https://nsearchives.nseindia.com/corporate/xbrl/PREF_ISSUE_LS_1690167_10072026113531_WEB.xml"
-  },
-  {
    "amountRaised": "20000000",
    "appId": "69519",
    "boardResDate": "10-JUL-2026",
@@ -747,6 +747,28 @@
    "totalNumOfSharesAllotted": "250000",
    "xbrlFileSize": "4.05 KB",
    "xmlFileName": "https://nsearchives.nseindia.com/corporate/xbrl/PREF_ISSUE_LS_1682754_19062026044735_WEB.xml"
+  },
+  {
+   "amountRaised": "15360000",
+   "appId": "69842",
+   "boardResDate": "10-JUL-2026",
+   "corporateIdentityNum": "L36109KA1995PLC017137",
+   "dateOfAllotmentOfShares": "23-JUN-2026",
+   "dateOfListing": null,
+   "dateOfSubmission": "10-JUL-2026",
+   "dateOfTradingApproval": null,
+   "isin": "INE0NVI01020",
+   "issueType": "Preferential",
+   "nameOfTheCompany": "TRANSTEEL SEATING TECHNOLOGIES LIMITED",
+   "nseSymbol": "TRANSTEEL",
+   "numberOfEquitySharesListed": "22440010",
+   "offerPricePerSecurity": "80",
+   "revisedFlag": null,
+   "stage": "Listing Stage",
+   "systemDate": "10-JUL-2026",
+   "totalNumOfSharesAllotted": "192000",
+   "xbrlFileSize": "4.05 KB",
+   "xmlFileName": "https://nsearchives.nseindia.com/corporate/xbrl/PREF_ISSUE_LS_1690167_10072026113531_WEB.xml"
   },
   {
    "amountRaised": "493275000",
@@ -1079,8 +1101,8 @@
    "xmlFileName": "https://nsearchives.nseindia.com/corporate/xbrl/PREF_ISSUE_LS_1682391_17062026110835_WEB.xml"
   },
   {
-   "amountRaised": "28800000000",
-   "appId": "69492",
+   "amountRaised": "9200000000",
+   "appId": "69488",
    "boardResDate": "03-JUL-2026",
    "corporateIdentityNum": "L64920GJ2007PLC058890",
    "dateOfAllotmentOfShares": "23-JUN-2026",
@@ -1096,9 +1118,9 @@
    "revisedFlag": null,
    "stage": "Listing Stage",
    "systemDate": "03-JUL-2026",
-   "totalNumOfSharesAllotted": "80894331",
+   "totalNumOfSharesAllotted": "25841244",
    "xbrlFileSize": "4.05 KB",
-   "xmlFileName": "https://nsearchives.nseindia.com/corporate/xbrl/PREF_ISSUE_LS_1686204_29062026065033_WEB.xml"
+   "xmlFileName": "https://nsearchives.nseindia.com/corporate/xbrl/PREF_ISSUE_LS_1686205_29062026065121_WEB.xml"
   },
   {
    "amountRaised": "2000000000",
@@ -1145,8 +1167,8 @@
    "xmlFileName": "https://nsearchives.nseindia.com/corporate/xbrl/PREF_ISSUE_LS_1680890_11062026020831_WEB.xml"
   },
   {
-   "amountRaised": "9200000000",
-   "appId": "69488",
+   "amountRaised": "28800000000",
+   "appId": "69492",
    "boardResDate": "03-JUL-2026",
    "corporateIdentityNum": "L64920GJ2007PLC058890",
    "dateOfAllotmentOfShares": "23-JUN-2026",
@@ -1162,9 +1184,9 @@
    "revisedFlag": null,
    "stage": "Listing Stage",
    "systemDate": "03-JUL-2026",
-   "totalNumOfSharesAllotted": "25841244",
+   "totalNumOfSharesAllotted": "80894331",
    "xbrlFileSize": "4.05 KB",
-   "xmlFileName": "https://nsearchives.nseindia.com/corporate/xbrl/PREF_ISSUE_LS_1686205_29062026065121_WEB.xml"
+   "xmlFileName": "https://nsearchives.nseindia.com/corporate/xbrl/PREF_ISSUE_LS_1686204_29062026065033_WEB.xml"
   },
   {
    "amountRaised": "61440000",
@@ -7790,7 +7812,7 @@
   }
  ],
  "_fetched": {
-  "at": "2026-07-21T12:05:56+00:00",
+  "at": "2026-07-21T12:19:40+00:00",
   "from_date": "22-01-2026",
   "to_date": "21-07-2026",
   "url": "https://www.nseindia.com/api/corporate-further-issues-pref"
