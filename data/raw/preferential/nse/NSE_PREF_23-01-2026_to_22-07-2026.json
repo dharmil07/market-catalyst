@@ -1,26 +1,26 @@
 {
  "data": [
   {
-   "amountRaised": "110003016760000",
-   "appId": "69243",
-   "boardResDate": "21-JUL-2026",
-   "corporateIdentityNum": "L24230HP2005PLC028969",
-   "dateOfAllotmentOfShares": "25-MAY-2026",
+   "amountRaised": "20000000",
+   "appId": "69591",
+   "boardResDate": "22-JUL-2026",
+   "corporateIdentityNum": "L99999GJ1963PLC168458",
+   "dateOfAllotmentOfShares": "18-JUN-2026",
    "dateOfListing": null,
-   "dateOfSubmission": "18-JUN-2026",
+   "dateOfSubmission": "25-JUN-2026",
    "dateOfTradingApproval": null,
-   "isin": "INE351Y01019",
+   "isin": "INE052A01021",
    "issueType": "Preferential",
-   "nameOfTheCompany": "BETA DRUGS LIMITED",
-   "nseSymbol": "BETA",
-   "numberOfEquitySharesListed": "10136890",
-   "offerPricePerSecurity": "1653.4",
+   "nameOfTheCompany": "WINDSOR MACHINES LIMITED",
+   "nseSymbol": "WINDMACHIN",
+   "numberOfEquitySharesListed": "10424811",
+   "offerPricePerSecurity": "191.85",
    "revisedFlag": null,
    "stage": "Listing Stage",
-   "systemDate": "21-JUL-2026",
-   "totalNumOfSharesAllotted": "665314",
-   "xbrlFileSize": "4.01 KB",
-   "xmlFileName": "https://nsearchives.nseindia.com/corporate/xbrl/PREF_ISSUE_LS_1684394_25062026012728_WEB.xml"
+   "systemDate": "22-JUL-2026",
+   "totalNumOfSharesAllotted": "10424811",
+   "xbrlFileSize": "3.98 KB",
+   "xmlFileName": "https://nsearchives.nseindia.com/corporate/xbrl/PREF_ISSUE_LS_1684847_25062026071531_WEB.xml"
   },
   {
    "amountRaised": "923901000",
@@ -43,6 +43,28 @@
    "totalNumOfSharesAllotted": "21997664",
    "xbrlFileSize": "4.04 KB",
    "xmlFileName": "https://nsearchives.nseindia.com/corporate/xbrl/PREF_ISSUE_LS_1693823_16072026114702_WEB.xml"
+  },
+  {
+   "amountRaised": "110003016760000",
+   "appId": "69243",
+   "boardResDate": "21-JUL-2026",
+   "corporateIdentityNum": "L24230HP2005PLC028969",
+   "dateOfAllotmentOfShares": "25-MAY-2026",
+   "dateOfListing": null,
+   "dateOfSubmission": "18-JUN-2026",
+   "dateOfTradingApproval": null,
+   "isin": "INE351Y01019",
+   "issueType": "Preferential",
+   "nameOfTheCompany": "BETA DRUGS LIMITED",
+   "nseSymbol": "BETA",
+   "numberOfEquitySharesListed": "10136890",
+   "offerPricePerSecurity": "1653.4",
+   "revisedFlag": null,
+   "stage": "Listing Stage",
+   "systemDate": "21-JUL-2026",
+   "totalNumOfSharesAllotted": "665314",
+   "xbrlFileSize": "4.01 KB",
+   "xmlFileName": "https://nsearchives.nseindia.com/corporate/xbrl/PREF_ISSUE_LS_1684394_25062026012728_WEB.xml"
   },
   {
    "amountRaised": "23950000",
@@ -7812,7 +7834,7 @@
   }
  ],
  "_fetched": {
-  "at": "2026-07-22T10:40:51+00:00",
+  "at": "2026-07-22T13:01:48+00:00",
   "from_date": "23-01-2026",
   "to_date": "22-07-2026",
   "url": "https://www.nseindia.com/api/corporate-further-issues-pref"
