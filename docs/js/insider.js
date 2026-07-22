@@ -28,7 +28,7 @@ export function initInsider(params) {
   dataMax = dates[dates.length - 1] || "";
 
   hydrate(params);
-  if (!f.from && !f.to) { f.to = dataMax; f.from = daysAgoIso(90, dataMax); }
+  if (!f.from && !f.to) { f.to = dataMax; f.from = daysAgoIso(30, dataMax); }
 
   buildChips("typeChips", types, f.types, (c) => c.toLowerCase());
   buildChips("catChips", cats, f.cats);
@@ -112,7 +112,7 @@ function syncControls() {
 function resetFilters() {
   f.types.clear(); f.cats.clear(); f.modes.clear();
   f.marketOnly = f.promoterOnly = f.watchOnly = false; f.search = "";
-  f.to = dataMax; f.from = daysAgoIso(90, dataMax);
+  f.to = dataMax; f.from = daysAgoIso(30, dataMax);
   for (const c of document.querySelectorAll(".chip.on")) c.classList.remove("on");
   markPreset(document.querySelector('#datePresets button[data-days="90"]'));
   syncControls(); render();
