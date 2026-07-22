@@ -30,7 +30,7 @@ SERVE_FIELDS = (
     "id", "source", "security_code", "symbol", "company", "company_norm",
     "person", "person_norm", "category", "txn_type", "mode", "is_market",
     "is_promoter", "shares", "value", "value_status", "value_in_totals",
-    "post_pct", "date_from", "date_intimation", "regulation", "xbrl",
+    "post_pct", "date_from", "regulation", "xbrl",
 )
 
 from pipeline import aggregate, match, normalize as nz, sanitize  # noqa: E402
