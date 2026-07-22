@@ -205,7 +205,6 @@ function renderPanels() {
 const COLS = [
   { key: "_star", t: "", sortable: false },
   { key: "date_from", t: "Date" },
-  { key: "date_intimation", t: "Reported by Exchange" },
   { key: "company", t: "Company" },
   { key: "person", t: "Person" },
   { key: "category", t: "Category" },
@@ -266,7 +265,6 @@ function renderTable() {
     const tr = el("tr", {}, [
       el("td", {}, star),
       el("td", {}, fmtDate(r.date_from)),
-      el("td", {}, fmtDate(r.date_intimation)),
       companyCell,
       el("td", { title: r.person || "" }, r.person),
       el("td", {}, label(r.category)),
