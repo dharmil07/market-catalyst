@@ -163,7 +163,7 @@ function topN(map, key, n = 10, positive = true) {
     .filter((e) => (positive ? e[key] > 0 : e[key] < 0))
     .sort((a, b) => (positive ? b[key] - a[key] : a[key] - b[key]))
     .slice(0, n)
-    .map((e) => ({ label: e.name.length > 22 ? e.name.slice(0, 21) + "…" : e.name, value: e[key], buy: e.buy, sell: e.sell }));
+    .map((e) => ({ label: e.name.length > 22 ? e.name.slice(0, 21) + "…" : e.name, fullName: e.name, value: e[key], buy: e.buy, sell: e.sell }));
 }
 
 function renderCharts() {
