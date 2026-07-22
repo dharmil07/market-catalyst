@@ -24,7 +24,7 @@ async function boot() {
   renderFreshness();
   renderTrust();
   renderScaffold("openoffers", state.openoffers, "Open Offers");
-  $("#genstamp").textContent = state.meta ? "data generated " + state.meta.generated_at.replace("T", " ") : "";
+  $("#genstamp").textContent = state.meta ? "data generated " + fmtIST(state.meta.generated_at) : "";
 
   const { tab, params } = parseHash();
   bootParams = params;
@@ -40,6 +40,16 @@ function wireTabs(params) {
   for (const btn of document.querySelectorAll(".tab")) {
     btn.addEventListener("click", () => switchTab(btn.dataset.tab, params));
   }
+}
+
+function fmtIST(iso) {
+  const d = new Date(iso);
+  if (isNaN(d)) return iso;
+  return d.toLocaleString("en-IN", {
+    day: "2-digit", month: "short", year: "numeric",
+    hour: "2-digit", minute: "2-digit", second: "2-digit",
+    hour12: true, timeZone: "Asia/Kolkata",
+  }) + " IST";
 }
 
 function switchTab(tab, params) {
