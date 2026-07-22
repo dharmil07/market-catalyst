@@ -78,7 +78,10 @@ export function topBar(id, items, color) {
   render(id, {
     type: "bar",
     data: { labels: items.map((i) => i.label), datasets: [{ data: items.map((i) => +(i.value / 1e7).toFixed(2)), backgroundColor: color || C.accent }] },
-    options: { indexAxis: "y", plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => `${c.parsed.x} cr` } } }, scales: linScales() },
+    options: { indexAxis: "y", plugins: { legend: { display: false }, tooltip: { callbacks: {
+      title: (ctx) => items[ctx[0].dataIndex].fullName,
+      label: (c) => `${c.parsed.x} cr`,
+    } } }, scales: linScales() },
   });
 }
 
@@ -92,7 +95,10 @@ export function acqVsDisp(id, items) {
         { label: "Disposed", data: items.map((i) => +(i.sell / 1e7).toFixed(2)), backgroundColor: C.sell },
       ],
     },
-    options: { indexAxis: "y", scales: linScales(), plugins: { tooltip: { callbacks: { label: (c) => `${c.dataset.label}: ${c.parsed.x} cr` } } } },
+    options: { indexAxis: "y", scales: linScales(), plugins: { tooltip: { callbacks: {
+      title: (ctx) => items[ctx[0].dataIndex].fullName,
+      label: (c) => `${c.dataset.label}: ${c.parsed.x} cr`,
+    } } } },
   });
 }
 
