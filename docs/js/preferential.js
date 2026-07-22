@@ -23,7 +23,7 @@ export function initPref(params) {
   $("#pfWatchOnly").checked = f.watchOnly;
 
   $("#pfFrom").addEventListener("change", (e) => { f.from = e.target.value; markPfPreset(null); render(); });
-  $("#pfTo").addEventListener("change", (e) => {  = e.target.value; markPfPreset(null); render(); });
+  $("#pfTo").addEventListener("change", (e) => { f.to = e.target.value; markPfPreset(null); render(); });
   $("#pfSearch").addEventListener("input", (e) => { f.search = e.target.value; render(); });
   $("#pfWatchOnly").addEventListener("change", (e) => { f.watchOnly = e.target.checked; render(); });
   $("#pfReset").addEventListener("click", () => {
