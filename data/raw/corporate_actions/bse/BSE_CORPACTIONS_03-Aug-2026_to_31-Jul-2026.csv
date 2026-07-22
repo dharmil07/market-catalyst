@@ -2,12 +2,12 @@ Company Name,Security Code,Security Name,Ex Date,Record Date,BC Start,BC End,ND 
 Aditya Birla Sun Life AMC Ltd,543374,ABSLAMC,22 Jul 2026,22 Jul 2026,,,22 Jul 2026,22 Jul 2026,,Final Dividend - Rs. - 25.5000
 Cosmo First Ltd,508814,COSMOFIRST,22 Jul 2026,22 Jul 2026,,,22 Jul 2026,22 Jul 2026,,Final Dividend - Rs. - 4.0000
 Goodricke Group Ltd,500166,GOODRICKE,22 Jul 2026,22 Jul 2026,,,22 Jul 2026,22 Jul 2026,,Final Dividend - Rs. - 2.0000
-Hawkins Cookers Ltd,508486,HAWKINCOOK,22 Jul 2026,22 Jul 2026,,,22 Jul 2026,22 Jul 2026,,Dividend - Rs. - 140.0000
+Hawkins Cookers Ltd-$,508486,HAWKINCOOK,22 Jul 2026,22 Jul 2026,,,22 Jul 2026,22 Jul 2026,,Dividend - Rs. - 140.0000
 HEG Ltd,509631,HEG,22 Jul 2026,22 Jul 2026,,,22 Jul 2026,22 Jul 2026,,Final Dividend - Rs. - 3.4000
-Menon Bearings Ltd,523828,MENONBE,22 Jul 2026,22 Jul 2026,,,22 Jul 2026,22 Jul 2026,,Interim Dividend - Rs. - 2.0000
-Ram Ratna Wires Ltd,522281,RAMRAT,22 Jul 2026,22 Jul 2026,,,22 Jul 2026,22 Jul 2026,,Final Dividend - Rs. - 2.5000
+Menon Bearings Ltd-$,523828,MENONBE,22 Jul 2026,22 Jul 2026,,,22 Jul 2026,22 Jul 2026,,Interim Dividend - Rs. - 2.0000
+Ram Ratna Wires Ltd-$,522281,RAMRAT,22 Jul 2026,22 Jul 2026,,,22 Jul 2026,22 Jul 2026,,Final Dividend - Rs. - 2.5000
 Sanco Trans Ltd,523116,SANCTRN,22 Jul 2026,22 Jul 2026,,,22 Jul 2026,22 Jul 2026,,Final Dividend - Rs. - 4.5000
-Sarla Performance Fibers Ltd,526885,SARLAPOLY,22 Jul 2026,22 Jul 2026,,,22 Jul 2026,22 Jul 2026,,Final Dividend - Rs. - 2.0000
+Sarla Performance Fibers Ltd-$,526885,SARLAPOLY,22 Jul 2026,22 Jul 2026,,,22 Jul 2026,22 Jul 2026,,Final Dividend - Rs. - 2.0000
 Sikozy Realtors Ltd,524642,SIKOZY,22 Jul 2026,22 Jul 2026,,,22 Jul 2026,22 Jul 2026,,Reduction of Capital 
 Taparia Tools Ltd,505685,TAPARIA,22 Jul 2026,22 Jul 2026,,,22 Jul 2026,22 Jul 2026,,Final Dividend - Rs. - 35.0000
 Thangamayil Jewellery Ltd,533158,THANGAMAYL,22 Jul 2026,22 Jul 2026,,,22 Jul 2026,22 Jul 2026,,Final Dividend - Rs. - 18.0000
@@ -15,8 +15,8 @@ Triveni Engineering & Industries Ltd,532356,TRIVENI,22 Jul 2026,22 Jul 2026,,,22
 Wires & Fabriks SA Ltd,507817,WIREFABR,22 Jul 2026,22 Jul 2026,,,22 Jul 2026,22 Jul 2026,,Final Dividend - Rs. - 0.1000
 ABM Knowledgeware Ltd,531161,ABMKNO,23 Jul 2026,23 Jul 2026,,,22 Jul 2026,23 Jul 2026,,Final Dividend - Rs. - 1.2500
 Afcons Infrastructure Ltd,544280,AFCONS,23 Jul 2026,23 Jul 2026,,,22 Jul 2026,23 Jul 2026,,Final Dividend - Rs. - 2.0000
-Banswara Syntex Ltd,503722,BANSWRAS,23 Jul 2026,23 Jul 2026,,,22 Jul 2026,23 Jul 2026,,Final Dividend - Rs. - 1.0000
-Bhansali Engineering Polymers Ltd,500052,BEPL,23 Jul 2026,23 Jul 2026,,,22 Jul 2026,23 Jul 2026,,Interim Dividend - Rs. - 1.0000
+Banswara Syntex Ltd-$,503722,BANSWRAS,23 Jul 2026,23 Jul 2026,,,22 Jul 2026,23 Jul 2026,,Final Dividend - Rs. - 1.0000
+Bhansali Engineering Polymers Ltd-$,500052,BEPL,23 Jul 2026,23 Jul 2026,,,22 Jul 2026,23 Jul 2026,,Interim Dividend - Rs. - 1.0000
 Bhagiradha Chemicals & Industries Ltd,531719,BHAGCHEM,23 Jul 2026,23 Jul 2026,,,22 Jul 2026,23 Jul 2026,,Final Dividend - Rs. - 0.1500
 D. B. Corp Ltd,533151,DBCORP,23 Jul 2026,23 Jul 2026,,,22 Jul 2026,23 Jul 2026,,Interim Dividend - Rs. - 5.0000
 Esab India Ltd,500133,ESABINDIA,23 Jul 2026,23 Jul 2026,,,22 Jul 2026,23 Jul 2026,,Final Dividend - Rs. - 25.0000
@@ -54,17 +54,17 @@ Jupiter Life Line Hospitals Ltd,543980,JLHL,24 Jul 2026,24 Jul 2026,,,22 Jul 202
 Joindre Capital Services Ltd,531861,JOINDRE,24 Jul 2026,25 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Final Dividend - Rs. - 2.0000
 Jubilant Ingrevia Ltd,543271,JUBLINGREA,24 Jul 2026,24 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Final Dividend - Rs. - 2.5000
 Jubilant Pharmova Ltd,530019,JUBLPHARMA,24 Jul 2026,24 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Final Dividend - Rs. - 5.0000
-Kalind Ltd,526935,KALIND,24 Jul 2026,24 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Bonus issue 1:2
 Kalind Ltd,526935,KALIND,24 Jul 2026,24 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Stock  Split From Rs.10/- to Rs.2/-
+Kalind Ltd,526935,KALIND,24 Jul 2026,24 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Bonus issue 1:2
 Karur Vysya Bank Ltd,590003,KARURVYSYA,24 Jul 2026,24 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Dividend - Rs. - 2.6000
-Kirloskar Brothers Ltd,500241,KIRLOSBROS,24 Jul 2026,24 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Final Dividend - Rs. - 7.0000
+Kirloskar Brothers Ltd-$,500241,KIRLOSBROS,24 Jul 2026,24 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Final Dividend - Rs. - 7.0000
 Lakshmi Electrical Control Systems Ltd,504258,LAKSELEC,24 Jul 2026,24 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Final Dividend - Rs. - 3.0000
 Mitsu Chem Plast Ltd,540078,MITSU,24 Jul 2026,24 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Final Dividend - Rs. - 0.2000
 Info Edge (India) Ltd,532777,NAUKRI,24 Jul 2026,24 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Final Dividend - Rs. - 3.6000
 Neuland Laboratories Ltd,524558,NEULANDLAB,24 Jul 2026,24 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Final Dividend - Rs. - 34.0000
-Nitta Gelatin India Ltd,506532,NITTAGELA,24 Jul 2026,24 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Final Dividend - Rs. - 7.0000
+Nitta Gelatin India Ltd-$,506532,NITTAGELA,24 Jul 2026,24 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Final Dividend - Rs. - 7.0000
 NOCIL Ltd,500730,NOCIL,24 Jul 2026,24 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Final Dividend - Rs. - 1.5000
-Orient Bell Ltd,530365,ORIENTBELL,24 Jul 2026,24 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Dividend - Rs. - 1.0000
+Orient Bell Ltd-$,530365,ORIENTBELL,24 Jul 2026,24 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Dividend - Rs. - 1.0000
 PDS Ltd,538730,PDSL,24 Jul 2026,24 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Final Dividend - Rs. - 1.6500
 Radico Khaitan Ltd,532497,RADICO,24 Jul 2026,24 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Final Dividend - Rs. - 9.0000
 Refex Industries Ltd,532884,REFEX,24 Jul 2026,24 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Final Dividend - Rs. - 1.0000
@@ -73,15 +73,15 @@ Sasken Technologies Ltd,532663,SASKEN,24 Jul 2026,24 Jul 2026,,,22 Jul 2026,24 J
 Shetron Ltd,526137,SHETR,24 Jul 2026,24 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Final Dividend - Rs. - 1.0000
 Shyam Metalics and Energy Ltd,543299,SHYAMMETL,24 Jul 2026,24 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Interim Dividend - Rs. - 1.8000
 SIL Investments Ltd,521194,SILINV,24 Jul 2026,24 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Dividend - Rs. - 2.5000
-Siyaram Silk Mills Ltd,503811,SIYSIL,24 Jul 2026,25 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Final Dividend - Rs. - 5.0000
+Siyaram Silk Mills Ltd-$,503811,SIYSIL,24 Jul 2026,25 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Final Dividend - Rs. - 5.0000
 Steelcast Ltd,513517,STEELCAS,24 Jul 2026,24 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Final Dividend - Rs. - 0.5400
-Swelect Energy Systems Ltd,532051,SWELECTES,24 Jul 2026,24 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Final Dividend - Rs. - 3.5000
+Swelect Energy Systems Ltd-$,532051,SWELECTES,24 Jul 2026,24 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Final Dividend - Rs. - 3.5000
 Voltamp Transformers Ltd,532757,VOLTAMP,24 Jul 2026,24 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Final Dividend - Rs. - 100.0000
 Zydus Lifesciences Ltd,532321,ZYDUSLIFE,24 Jul 2026,24 Jul 2026,,,22 Jul 2026,24 Jul 2026,,Final Dividend - Rs. - 1.0000
 Amara Raja Energy & Mobility Ltd,500008,ARE&M,27 Jul 2026,27 Jul 2026,,,22 Jul 2026,27 Jul 2026,,Final Dividend - Rs. - 5.2000
 Birla Cable Ltd,500060,BIRLACABLE,27 Jul 2026,27 Jul 2026,,,22 Jul 2026,27 Jul 2026,,Final Dividend - Rs. - 1.2500
 Crisil Ltd,500092,CRISIL,27 Jul 2026,27 Jul 2026,,,22 Jul 2026,27 Jul 2026,,Interim Dividend
-Deepak Nitrite Ltd,506401,DEEPAKNTR,27 Jul 2026,27 Jul 2026,,,22 Jul 2026,27 Jul 2026,,Final Dividend - Rs. - 7.5000
+Deepak Nitrite Ltd-$,506401,DEEPAKNTR,27 Jul 2026,27 Jul 2026,,,22 Jul 2026,27 Jul 2026,,Final Dividend - Rs. - 7.5000
 DLF Ltd,532868,DLF,27 Jul 2026,27 Jul 2026,,,22 Jul 2026,27 Jul 2026,,Final Dividend - Rs. - 8.0000
 Everest Industries Ltd,508906,EVERESTIND,27 Jul 2026,27 Jul 2026,,,22 Jul 2026,27 Jul 2026,,Final Dividend - Rs. - 1.0000
 KCP Ltd,590066,KCP,27 Jul 2026,27 Jul 2026,,,22 Jul 2026,27 Jul 2026,,Dividend - Rs. - 0.5000
@@ -91,15 +91,15 @@ Universal Cables Ltd,504212,UNIVCABLES,27 Jul 2026,27 Jul 2026,,,22 Jul 2026,27 
 Vindhya Telelinks Ltd,517015,VINDHYATEL,27 Jul 2026,27 Jul 2026,,,22 Jul 2026,27 Jul 2026,,Final Dividend - Rs. - 6.0000
 Wipro Ltd,507685,WIPRO,27 Jul 2026,27 Jul 2026,,,22 Jul 2026,27 Jul 2026,,Interim Dividend - Rs. - 2.0000
 Dollar Industries Ltd,541403,DOLLAR,28 Jul 2026,28 Jul 2026,,,22 Jul 2026,28 Jul 2026,,Final Dividend - Rs. - 3.0000
-EIH Associated Hotels Ltd,523127,EIHAHOTELS,28 Jul 2026,28 Jul 2026,,,22 Jul 2026,28 Jul 2026,,Final Dividend - Rs. - 3.5000
+EIH Associated Hotels Ltd-$,523127,EIHAHOTELS,28 Jul 2026,28 Jul 2026,,,22 Jul 2026,28 Jul 2026,,Final Dividend - Rs. - 3.5000
 GMM Pfaudler Ltd,505255,GMMPFAUDLR,28 Jul 2026,28 Jul 2026,,,22 Jul 2026,28 Jul 2026,,Final Dividend - Rs. - 1.0000
 Godrej Properties Ltd,533150,GODREJPROP,28 Jul 2026,28 Jul 2026,,,22 Jul 2026,28 Jul 2026,,Final Dividend - Rs. - 10.0000
 Greaves Cotton Ltd,501455,GREAVESCOT,28 Jul 2026,28 Jul 2026,,,22 Jul 2026,28 Jul 2026,,Final Dividend - Rs. - 2.0000
 Hardwyn India Ltd,541276,HARDWYN,28 Jul 2026,28 Jul 2026,,,22 Jul 2026,28 Jul 2026,,Bonus issue 2:5
 IRB InvIT Fund,540526,IRBINVIT,28 Jul 2026,28 Jul 2026,,,22 Jul 2026,28 Jul 2026,,Income Distribution (InvIT) 
 Menon Pistons Ltd,531727,MENNPIS,28 Jul 2026,28 Jul 2026,,,22 Jul 2026,28 Jul 2026,,Final Dividend - Rs. - 1.0000
-Permanent Magnets Ltd,504132,PERMAGN,28 Jul 2026,28 Jul 2026,,,22 Jul 2026,28 Jul 2026,,Final Dividend - Rs. - 2.2000
-Resonance Specialties Ltd,524218,RESONANCE,28 Jul 2026,28 Jul 2026,,,22 Jul 2026,28 Jul 2026,,Final Dividend - Rs. - 1.0000
+Permanent Magnets Ltd-$,504132,PERMAGN,28 Jul 2026,28 Jul 2026,,,22 Jul 2026,28 Jul 2026,,Final Dividend - Rs. - 2.2000
+Resonance Specialties Ltd-$,524218,RESONANCE,28 Jul 2026,28 Jul 2026,,,22 Jul 2026,28 Jul 2026,,Final Dividend - Rs. - 1.0000
 Solar Industries India Ltd,532725,SOLARINDS,28 Jul 2026,28 Jul 2026,,,22 Jul 2026,28 Jul 2026,,Final Dividend - Rs. - 11.0000
 Alembic Pharmaceuticals Ltd,533573,APLLTD,29 Jul 2026,29 Jul 2026,,,,,,Final Dividend - Rs. - 12.0000
 ASM Technologies Ltd,526433,ASMTEC,29 Jul 2026,29 Jul 2026,,,,,,Final Dividend - Rs. - 12.0000
@@ -107,34 +107,34 @@ Godrej Agrovet Ltd,540743,GODREJAGRO,29 Jul 2026,29 Jul 2026,,,,,,Final Dividend
 IFGL Refractories Ltd,540774,IFGLEXPOR,29 Jul 2026,29 Jul 2026,,,,,,Final Dividend - Rs. - 2.1500
 Rane (Madras) Ltd,532661,RML,29 Jul 2026,29 Jul 2026,,,,,,Final Dividend - Rs. - 16.0000
 Route Mobile Ltd,543228,ROUTE,29 Jul 2026,29 Jul 2026,,,,,,Interim Dividend
-Shakti Pumps India Ltd,531431,SHAKTIPUMP,29 Jul 2026,29 Jul 2026,,,,,,Final Dividend - Rs. - 1.0000
+Shakti Pumps India Ltd-$,531431,SHAKTIPUMP,29 Jul 2026,29 Jul 2026,,,,,,Final Dividend - Rs. - 1.0000
 Siemens Ltd,500550,SIEMENS,29 Jul 2026,29 Jul 2026,,,,,,Final Dividend - Rs. - 18.0000
 TTK Prestige Ltd,517506,TTKPRESTIG,29 Jul 2026,29 Jul 2026,,,,,,Final Dividend - Rs. - 7.5000
-Ugar Sugar Works Ltd,530363,UGARSUGAR,29 Jul 2026,29 Jul 2026,,,,,,Final Dividend - Rs. - 0.1000
-Albert David Ltd,524075,ALBERTDAVD,30 Jul 2026,30 Jul 2026,,,,,,Final Dividend - Rs. - 5.0000
+Ugar Sugar Works Ltd-$,530363,UGARSUGAR,29 Jul 2026,29 Jul 2026,,,,,,Final Dividend - Rs. - 0.1000
+Albert David Ltd-$,524075,ALBERTDAVD,30 Jul 2026,30 Jul 2026,,,,,,Final Dividend - Rs. - 5.0000
 BASF India Ltd,500042,BASF,30 Jul 2026,30 Jul 2026,,,,,,Final Dividend - Rs. - 25.0000
 Birlanu Ltd,509675,BIRLANU,30 Jul 2026,30 Jul 2026,,,,,,Final Dividend - Rs. - 15.0000
-Cheviot Company Ltd,526817,CHEVIOT,30 Jul 2026,30 Jul 2026,,,,,,Final Dividend - Rs. - 25.0000
+Cheviot Company Ltd-$,526817,CHEVIOT,30 Jul 2026,30 Jul 2026,,,,,,Final Dividend - Rs. - 25.0000
 Crestchem Ltd,526269,CRSTCHM,30 Jul 2026,30 Jul 2026,,,,,,Final Dividend - Rs. - 1.5000
 Dwarikesh Sugar Industries Ltd,532610,DWARKESH,30 Jul 2026,30 Jul 2026,,,,,,Final Dividend - Rs. - 0.1000
 GPT Healthcare Ltd,544131,GPTHEALTH,30 Jul 2026,30 Jul 2026,,,,,,Final Dividend - Rs. - 1.5000
-Granules India Ltd,532482,GRANULES,30 Jul 2026,30 Jul 2026,,,,,,Final Dividend - Rs. - 1.7500
+Granules India Ltd-$,532482,GRANULES,30 Jul 2026,30 Jul 2026,,,,,,Final Dividend - Rs. - 1.7500
 IG Petrochemicals Ltd,500199,IGPL,30 Jul 2026,30 Jul 2026,,,,,,Final Dividend - Rs. - 5.0000
 IVP Ltd,507580,IVP,30 Jul 2026,30 Jul 2026,,,,,,Final Dividend - Rs. - 1.5000
 JK Tyre & Industries Ltd,530007,JKTYRE,30 Jul 2026,30 Jul 2026,,,,,,Dividend - Rs. - 4.0000
-Kokuyo Camlin Ltd,523207,KOKUYOCMLN,30 Jul 2026,30 Jul 2026,,,,,,Final Dividend - Rs. - 0.3000
+Kokuyo Camlin Ltd-$,523207,KOKUYOCMLN,30 Jul 2026,30 Jul 2026,,,,,,Final Dividend - Rs. - 0.3000
 Marico Ltd,531642,MARICO,30 Jul 2026,30 Jul 2026,,,,,,Final Dividend - Rs. - 4.0000
 Suryaamba Spinning Mills Ltd,533101,SURYAAMBA,30 Jul 2026,30 Jul 2026,,,,,,Final Dividend - Rs. - 1.0000
 UltraTech Cement Ltd,532538,ULTRACEMCO,30 Jul 2026,30 Jul 2026,,,,,,Final Dividend - Rs. - 240.0000
 Yasho Industries Ltd,541167,YASHO,30 Jul 2026,30 Jul 2026,,,,,,Final Dividend - Rs. - 0.5000
-ADC India Communications Ltd,523411,ADCINDIA,31 Jul 2026,31 Jul 2026,,,,,,Dividend - Rs. - 25.0000
+ADC India Communications Ltd-$,523411,ADCINDIA,31 Jul 2026,31 Jul 2026,,,,,,Dividend - Rs. - 25.0000
 Amal Ltd,506597,AMAL,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 1.5000
-Anant Raj Ltd,515055,ANANTRAJ,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 1.0000
+Anant Raj Ltd-$,515055,ANANTRAJ,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 1.0000
 ASK Automotive Ltd,544022,ASKAUTOLTD,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 1.8500
 AstraZeneca Pharma India Ltd,506820,ASTRAZEN,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 36.0000
 Bajel Projects Ltd,544042,BAJEL,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 0.6000
 Bata India Ltd,500043,BATAINDIA,31 Jul 2026,31 Jul 2026,,,,,,Dividend - Rs. - 9.0000
-Batliboi Ltd,522004,BATLIBOI,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 0.6000
+Batliboi Ltd-$,522004,BATLIBOI,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 0.6000
 Bengal Tea & Fabrics Ltd,532230,BENGALT,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 1.5000
 Bharti Hexacom Ltd,544162,BHARTIHEXA,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 18.0000
 Bombay Dyeing & Manufacturing Company Ltd,500020,BOMDYEING,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 0.4000
@@ -157,14 +157,14 @@ GE Power India Ltd,532309,GVPIL,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs
 Igarashi Motors India Ltd,517380,IGARASHI,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 1.3000
 Indian Metals & Ferro Alloys Ltd,533047,IMFA,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 7.5000
 Indegene Ltd,544172,INDGN,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 2.2500
-International Travel House Ltd,500213,ITHL,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 5.5000
+International Travel House Ltd-$,500213,ITHL,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 5.5000
 Kaira Can Company Ltd,504840,KAIRA,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 12.0000
 Kaycee Industries Ltd,504084,KAYCEEI,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 2.0000
 KELTECH Energies Ltd,506528,KELENRG,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 1.5000
 Kirloskar Oil Engines Ltd,533293,KIRLOSENG,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 4.5000
 KPT Industries Ltd,505299,KPT,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 3.0000
 Knowledge Realty Trust,544481,KRT,31 Jul 2026,31 Jul 2026,,,,,,Income Distribution REITs 
-Mafatlal Industries Ltd,500264,MAFATIND,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 1.2500
+Mafatlal Industries Ltd-$,500264,MAFATIND,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 1.2500
 Mamata Machinery Ltd,544318,MAMATA,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 0.5000
 Nexome Capital Markets Ltd,508905,NEXOME,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 1.5000
 Power Finance Corporation Ltd,532810,PFC,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 3.9500
@@ -181,7 +181,7 @@ Shilchar Technologies Ltd,531201,SHILCTECH,31 Jul 2026,31 Jul 2026,,,,,,Final Di
 Singer India Ltd,505729,SINGERIND,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 0.4000
 Sirca Paints India Ltd,543686,SIRCA,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 2.0000
 Smruthi Organics Ltd,540686,SMRUTHIORG,31 Jul 2026,31 Jul 2026,,,,,,Dividend - Rs. - 1.5000
-Spice Islands Industries Ltd,526827,SPICEISLIN,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 0.6000
+Spice Islands Industries Ltd-$,526827,SPICEISLIN,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 0.6000
 Strides Pharma Science Ltd,532531,STAR,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 5.0000
 Timken India Ltd,522113,TIMKEN,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 2.5000
 V-Guard Industries Ltd,532953,VGUARD,31 Jul 2026,31 Jul 2026,,,,,,Final Dividend - Rs. - 1.5000
@@ -202,9 +202,9 @@ Eveready Industries India Ltd,531508,EVEREADY,04 Aug 2026,04 Aug 2026,,,,,,Final
 Greenply Industries Ltd,526797,GREENPLY,04 Aug 2026,04 Aug 2026,,,,,,Final Dividend - Rs. - 0.5000
 Hind Rectifiers Ltd,504036,HIRECT,04 Aug 2026,04 Aug 2026,,,,,,Final Dividend - Rs. - 1.4000
 C.E. Info Systems Ltd,543425,MAPMYINDIA,04 Aug 2026,04 Aug 2026,,,,,,Final Dividend - Rs. - 3.5000
-Mysore Petro Chemicals Ltd,506734,MYSORPETRO,04 Aug 2026,04 Aug 2026,,,,,,Final Dividend - Rs. - 2.0000
-TCPL Packaging Ltd,523301,TCPLPACK,04 Aug 2026,04 Aug 2026,,,,,,Final Dividend - Rs. - 25.0000
-Adf Foods Ltd,519183,ADFFOODS,05 Aug 2026,05 Aug 2026,,,,,,Final Dividend - Rs. - 0.6000
+Mysore Petro Chemicals Ltd-$,506734,MYSORPETRO,04 Aug 2026,04 Aug 2026,,,,,,Final Dividend - Rs. - 2.0000
+TCPL Packaging Ltd-$,523301,TCPLPACK,04 Aug 2026,04 Aug 2026,,,,,,Final Dividend - Rs. - 25.0000
+Adf Foods Ltd-$,519183,ADFFOODS,05 Aug 2026,05 Aug 2026,,,,,,Final Dividend - Rs. - 0.6000
 Ajanta Pharma Ltd,532331,AJANTPHARM,05 Aug 2026,05 Aug 2026,,,,,,Interim Dividend
 Anuh Pharma Ltd,506260,ANUHPHR,05 Aug 2026,05 Aug 2026,,,,,,Final Dividend - Rs. - 1.5000
 Automotive Axles Ltd,505010,AUTOAXLES,05 Aug 2026,05 Aug 2026,,,,,,Final Dividend - Rs. - 32.0000
@@ -214,14 +214,14 @@ Berger Paints India Ltd,509480,BERGEPAINT,05 Aug 2026,05 Aug 2026,,,,,,Dividend 
 Brigade Enterprises Ltd,532929,BRIGADE,05 Aug 2026,05 Aug 2026,,,,,,Final Dividend - Rs. - 2.0000
 Disa India Ltd,500068,DISAQ,05 Aug 2026,05 Aug 2026,,,,,,Final Dividend - Rs. - 200.0000
 Fermenta Biotech Ltd,506414,FERMENTA,05 Aug 2026,05 Aug 2026,,,,,,Final Dividend - Rs. - 3.7500
-Gandhi Special Tubes Ltd,513108,GANDHITUBE,05 Aug 2026,05 Aug 2026,,,,,,Final Dividend - Rs. - 15.0000
+Gandhi Special Tubes Ltd-$,513108,GANDHITUBE,05 Aug 2026,05 Aug 2026,,,,,,Final Dividend - Rs. - 15.0000
 Goodyear India Ltd,500168,GOODYEAR,05 Aug 2026,05 Aug 2026,,,,,,Final Dividend - Rs. - 26.5000
-Indag Rubber Ltd,509162,INDAG,05 Aug 2026,05 Aug 2026,,,,,,Final Dividend - Rs. - 1.5000
+Indag Rubber Ltd-$,509162,INDAG,05 Aug 2026,05 Aug 2026,,,,,,Final Dividend - Rs. - 1.5000
 Matrimony.com Ltd,540704,MATRIMONY,05 Aug 2026,05 Aug 2026,,,,,,Final Dividend - Rs. - 5.0000
 Mukesh Babu Financial Services Ltd,530341,MUKESHB,05 Aug 2026,05 Aug 2026,,,,,,Final Dividend - Rs. - 1.2000
 Munjal Showa Ltd,520043,MUNJALSHOW,05 Aug 2026,05 Aug 2026,,,,,,Final Dividend - Rs. - 4.5000
-Oriental Aromatics Ltd,500078,OAL,05 Aug 2026,05 Aug 2026,,,,,,Final Dividend - Rs. - 0.5000
-Shreyans Industries Ltd,516016,SHREYANIND,05 Aug 2026,05 Aug 2026,,,,,,Final Dividend - Rs. - 1.5000
+Oriental Aromatics Ltd-$,500078,OAL,05 Aug 2026,05 Aug 2026,,,,,,Final Dividend - Rs. - 0.5000
+Shreyans Industries Ltd-$,516016,SHREYANIND,05 Aug 2026,05 Aug 2026,,,,,,Final Dividend - Rs. - 1.5000
 Sika Interplant Systems Ltd,523606,SIKA,05 Aug 2026,05 Aug 2026,,,,,,Final Dividend - Rs. - 3.5000
 Somany Ceramics Ltd,531548,SOMANYCERA,05 Aug 2026,05 Aug 2026,,,,,,Final Dividend - Rs. - 2.0000
 TD Power Systems Ltd,533553,TDPOWERSYS,05 Aug 2026,05 Aug 2026,,,,,,Final Dividend - Rs. - 1.1000
@@ -248,20 +248,20 @@ PI Industries Ltd,523642,PIIND,07 Aug 2026,07 Aug 2026,,,,,,Final Dividend - Rs.
 Rubicon Research Ltd,544578,RUBICON,07 Aug 2026,07 Aug 2026,,,,,,Final Dividend - Rs. - 1.5000
 Sagility Ltd,544282,SAGILITY,07 Aug 2026,07 Aug 2026,,,,,,Final Dividend - Rs. - 0.1000
 Sharda Cropchem Ltd,538666,SHARDACROP,07 Aug 2026,07 Aug 2026,,,,,,Final Dividend - Rs. - 9.0000
-Shri Dinesh Mills Ltd,503804,SHRIDINE,07 Aug 2026,07 Aug 2026,,,,,,Final Dividend - Rs. - 1.5000
+Shri Dinesh Mills Ltd-$,503804,SHRIDINE,07 Aug 2026,07 Aug 2026,,,,,,Final Dividend - Rs. - 1.5000
 Steelcast Ltd,513517,STEELCAS,07 Aug 2026,07 Aug 2026,,,,,,Interim Dividend
 Tube Investments of India Ltd,540762,TIINDIA,07 Aug 2026,07 Aug 2026,,,,,,Final Dividend - Rs. - 1.5000
-United Breweries Ltd,532478,UBL,07 Aug 2026,07 Aug 2026,,,,,,Final Dividend - Rs. - 10.0000
+United Breweries Ltd-$,532478,UBL,07 Aug 2026,07 Aug 2026,,,,,,Final Dividend - Rs. - 10.0000
 Varroc Engineering Ltd,541578,VARROC,07 Aug 2026,07 Aug 2026,,,,,,Final Dividend - Rs. - 1.5000
 Venus Remedies Ltd,526953,VENUSREM,07 Aug 2026,07 Aug 2026,,,,,,Final Dividend - Rs. - 10.0000
 AVT Natural Products Ltd,519105,AVTNPL,10 Aug 2026,10 Aug 2026,,,,,,Final Dividend - Rs. - 0.4500
-Majestic Auto Ltd,500267,MAJESAUT,10 Aug 2026,10 Aug 2026,,,,,,Final Dividend - Rs. - 25.0000
+Majestic Auto Ltd-$,500267,MAJESAUT,10 Aug 2026,10 Aug 2026,,,,,,Final Dividend - Rs. - 25.0000
 West Coast Paper Mills Ltd,500444,WSTCSTPAPR,10 Aug 2026,10 Aug 2026,,,,,,Final Dividend - Rs. - 3.0000
-Dhunseri Ventures Ltd,523736,DVL,11 Aug 2026,11 Aug 2026,,,,,,Final Dividend - Rs. - 1.5000
+Dhunseri Ventures Ltd-$,523736,DVL,11 Aug 2026,11 Aug 2026,,,,,,Final Dividend - Rs. - 1.5000
 Gland Pharma Ltd,543245,GLAND,11 Aug 2026,11 Aug 2026,,,,,,Final Dividend - Rs. - 20.0000
 Kirloskar Industries Ltd,500243,KIRLOSIND,11 Aug 2026,11 Aug 2026,,,,,,Final Dividend - Rs. - 13.0000
 Kopran Ltd,524280,KOPRAN,11 Aug 2026,11 Aug 2026,,,,,,Final Dividend - Rs. - 3.0000
-Ratnamani Metals & Tubes Ltd,520111,RATNAMANI,11 Aug 2026,11 Aug 2026,,,,,,Final Dividend - Rs. - 10.0000
+Ratnamani Metals & Tubes Ltd-$,520111,RATNAMANI,11 Aug 2026,11 Aug 2026,,,,,,Final Dividend - Rs. - 10.0000
 Standard Industries Ltd,530017,SIL,11 Aug 2026,11 Aug 2026,,,,,,Final Dividend - Rs. - 0.2500
 Computer Age Management Services Ltd,543232,CAMS,12 Aug 2026,12 Aug 2026,,,,,,Interim Dividend
 Dhunseri Tea & Industries Ltd,538902,DTIL,12 Aug 2026,12 Aug 2026,,,,,,Final Dividend - Rs. - 2.0000
@@ -292,11 +292,11 @@ Mangalam Cement Ltd,502157,MANGLMCEM,14 Aug 2026,14 Aug 2026,,,,,,Final Dividend
 Minda Corporation Ltd,538962,MINDACORP,14 Aug 2026,14 Aug 2026,,,,,,Final Dividend - Rs. - 0.8000
 NCC Ltd,500294,NCC,14 Aug 2026,14 Aug 2026,,,,,,Dividend - Rs. - 2.2000
 Xchanging Solutions Ltd,532616,XCHANGING,14 Aug 2026,14 Aug 2026,,,,,,Final Dividend - Rs. - 2.0000
-Hisar Metal Industries Ltd,590018,HISARMETAL,17 Aug 2026,17 Aug 2026,,,,,,Final Dividend - Rs. - 1.0000
+Hisar Metal Industries Ltd-$,590018,HISARMETAL,17 Aug 2026,17 Aug 2026,,,,,,Final Dividend - Rs. - 1.0000
 Panama Petrochem Ltd,524820,PANAMAPET,17 Aug 2026,17 Aug 2026,,,,,,Dividend - Rs. - 3.0000
 Bombay Oxygen Investments Ltd,509470,BOMOXY-B1,18 Aug 2026,18 Aug 2026,,,,,,Final Dividend - Rs. - 25.0000
 Elixir Capital Ltd,531278,ELIXIR,18 Aug 2026,18 Aug 2026,,,,,,Final Dividend - Rs. - 1.2500
-India Gelatine & Chemicals Ltd,531253,INDGELA,18 Aug 2026,18 Aug 2026,,,,,,Final Dividend - Rs. - 6.0000
+India Gelatine & Chemicals Ltd-$,531253,INDGELA,18 Aug 2026,18 Aug 2026,,,,,,Final Dividend - Rs. - 6.0000
 Jay Bharat Maruti Ltd,520066,JAYBARMARU,18 Aug 2026,18 Aug 2026,,,,,,Final Dividend - Rs. - 0.7000
 NGL Fine Chem Ltd,524774,NGLFINE,18 Aug 2026,18 Aug 2026,,,,,,Final Dividend - Rs. - 1.7500
 Rossell India Ltd,533168,ROSSELLIND,18 Aug 2026,18 Aug 2026,,,,,,Dividend - Rs. - 0.4000
@@ -306,13 +306,13 @@ Kovai Medical Center & Hospital Ltd,523323,KOVAI,19 Aug 2026,19 Aug 2026,,,,,,Fi
 LG Balakrishnan & Bros Ltd,500250,LGBBROSLTD,19 Aug 2026,19 Aug 2026,,,,,,Final Dividend - Rs. - 22.0000
 Page Industries Ltd,532827,PAGEIND,19 Aug 2026,19 Aug 2026,,,,,,Interim Dividend
 Amarjothi Spinning Mills Ltd,521097,AMARJOTHI,20 Aug 2026,20 Aug 2026,,,,,,Final Dividend - Rs. - 2.2000
-Dai-Ichi Karkaria Ltd,526821,DAICHI,20 Aug 2026,20 Aug 2026,,,,,,Final Dividend - Rs. - 1.5000
+Dai-Ichi Karkaria Ltd-$,526821,DAICHI,20 Aug 2026,20 Aug 2026,,,,,,Final Dividend - Rs. - 1.5000
 Kuantum Papers Ltd,532937,KUANTUM,20 Aug 2026,20 Aug 2026,,,,,,Final Dividend - Rs. - 2.5000
 Marksans Pharma Ltd,524404,MARKSANS,20 Aug 2026,20 Aug 2026,,,,,,Final Dividend - Rs. - 0.9000
-Sukhjit Starch & Chemicals Ltd,524542,SUKHJITS,20 Aug 2026,20 Aug 2026,,,,,,Final Dividend - Rs. - 1.0000
+Sukhjit Starch & Chemicals Ltd-$,524542,SUKHJITS,20 Aug 2026,20 Aug 2026,,,,,,Final Dividend - Rs. - 1.0000
 AK Capital Services Ltd,530499,AKCAPIT,21 Aug 2026,21 Aug 2026,,,,,,Final Dividend - Rs. - 22.0000
 GE Vernova T&D India Ltd,522275,GVT&D,21 Aug 2026,21 Aug 2026,,,,,,Dividend - Rs. - 10.0000
-KSE Ltd,519421,KSE,21 Aug 2026,21 Aug 2026,,,,,,Final Dividend - Rs. - 7.5000
+KSE Ltd-$,519421,KSE,21 Aug 2026,21 Aug 2026,,,,,,Final Dividend - Rs. - 7.5000
 LIC Housing Finance Ltd,500253,LICHSGFIN,21 Aug 2026,21 Aug 2026,,,,,,Final Dividend - Rs. - 10.0000
 Hitachi Energy India Ltd,543187,POWERINDIA,21 Aug 2026,21 Aug 2026,,,,,,Final Dividend - Rs. - 8.0000
 ZEN Technologies Ltd,533339,ZENTEC,21 Aug 2026,21 Aug 2026,,,,,,Final Dividend - Rs. - 1.0000
@@ -324,9 +324,9 @@ Suraksha Diagnostic Ltd,544293,SURAKSHA,25 Aug 2026,26 Aug 2026,,,,,,Final Divid
 Manaksia Coated Metals & Industries Ltd,539046,MANAKCOAT,27 Aug 2026,27 Aug 2026,,,,,,Final Dividend - Rs. - 0.0500
 Procter & Gamble Health Ltd,500126,PGHL,27 Aug 2026,27 Aug 2026,,,,,,Final Dividend - Rs. - 45.0000
 Thomas Cook (India) Ltd,500413,THOMASCOOK,27 Aug 2026,27 Aug 2026,,,,,,Final Dividend - Rs. - 0.5000
-Dynamatic Technologies Ltd,505242,DYNAMATECH,28 Aug 2026,28 Aug 2026,,,,,,Final Dividend - Rs. - 5.0000
-Salzer Electronics Ltd,517059,SALZERELEC,28 Aug 2026,28 Aug 2026,,,,,,Dividend - Rs. - 2.5000
+Dynamatic Technologies Ltd-$,505242,DYNAMATECH,28 Aug 2026,28 Aug 2026,,,,,,Final Dividend - Rs. - 5.0000
+Salzer Electronics Ltd-$,517059,SALZERELEC,28 Aug 2026,28 Aug 2026,,,,,,Dividend - Rs. - 2.5000
 Swan Corp Ltd,503310,SWANCORP,28 Aug 2026,28 Aug 2026,,,,,,Final Dividend - Rs. - 0.1500
-Ganesh Housing Ltd,526367,GANESHHOU,31 Aug 2026,31 Aug 2026,,,,,,Final Dividend - Rs. - 1.5000
-Ion Exchange India Ltd,500214,IONEXCHANG,31 Aug 2026,31 Aug 2026,,,,,,Dividend - Rs. - 1.2500
+Ganesh Housing Ltd-$,526367,GANESHHOU,31 Aug 2026,31 Aug 2026,,,,,,Final Dividend - Rs. - 1.5000
+Ion Exchange India Ltd-$,500214,IONEXCHANG,31 Aug 2026,31 Aug 2026,,,,,,Dividend - Rs. - 1.2500
 Triveni Engineering & Industries Ltd,532356,TRIVENI,31 Aug 2026,31 Aug 2026,,,,,,Final Dividend - Rs. - 1.2500
