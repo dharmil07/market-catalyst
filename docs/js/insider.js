@@ -205,6 +205,7 @@ function renderPanels() {
 const COLS = [
   { key: "_star", t: "", sortable: false },
   { key: "date_from", t: "Date" },
+  { key: "date_intimation", t: "Reported by Exchange" },
   { key: "company", t: "Company" },
   { key: "person", t: "Person" },
   { key: "category", t: "Category" },
@@ -214,7 +215,6 @@ const COLS = [
   { key: "value", t: "Value", num: true },
   { key: "post_pct", t: "% Post", num: true },
   { key: "source", t: "Src" },
-  { key: "_doc", t: "Doc", sortable: false },
 ];
 const RENDER_CAP = 600;
 
@@ -266,6 +266,7 @@ function renderTable() {
     const tr = el("tr", {}, [
       el("td", {}, star),
       el("td", {}, fmtDate(r.date_from)),
+      el("td", {}, fmtDate(r.date_intimation)),
       companyCell,
       el("td", { title: r.person || "" }, r.person),
       el("td", {}, label(r.category)),
@@ -275,7 +276,6 @@ function renderTable() {
       el("td", { class: "num" }, valueCell),
       el("td", { class: "num" }, fmtPct(r.post_pct)),
       el("td", {}, el("span", { class: "src", title: r.source }, r.source)),
-      el("td", {}, doc),
     ]);
     frag.append(tr);
   }
