@@ -3,31 +3,50 @@
 // because the filer-entered figure is unreliable (see pipeline/parsers/nse_pref.py).
 import { state, getWatch, toggleWatch } from "./data.js";
 import * as charts from "./charts.js";
-import { $, el, fmtInt, fmtCr, fmtDate, downloadCsv } from "./util.js";
+import { $, el, fmtInt, fmtCr, fmtDate, downloadCsv, daysAgoIso } from "./util.js";
 import { writeHash } from "./hash.js";
 
 const f = { from: "", to: "", search: "", watchOnly: false, sortKey: "date_allotment", sortDir: -1 };
-let filtered = [], isActive = false, built = false;
+let filtered = [], isActive = false, built = false, dataMax = "";
 
 export function initPref(params) {
+  const dates = state.preferential.map((r) => r.date_allotment).filter(Boolean).sort();
+  dataMax = dates[dates.length - 1] || "";
+
   f.from = params.pffrom || ""; f.to = params.pfto || "";
   f.search = params.pfq || "";
   f.watchOnly = params.pfwatch === "1";
 
+  if (!f.from && !f.to) { f.to = dataMax; f.from = daysAgoIso(182, dataMax); }
+
   $("#pfFrom").value = f.from; $("#pfTo").value = f.to; $("#pfSearch").value = f.search;
   $("#pfWatchOnly").checked = f.watchOnly;
 
-  $("#pfFrom").addEventListener("change", (e) => { f.from = e.target.value; render(); });
-  $("#pfTo").addEventListener("change", (e) => { f.to = e.target.value; render(); });
+  $("#pfFrom").addEventListener("change", (e) => { f.from = e.target.value; markPfPreset(null); render(); });
+  $("#pfTo").addEventListener("change", (e) => { f.to = e.target.value; markPfPreset(null); render(); });
   $("#pfSearch").addEventListener("input", (e) => { f.search = e.target.value; render(); });
   $("#pfWatchOnly").addEventListener("change", (e) => { f.watchOnly = e.target.checked; render(); });
   $("#pfReset").addEventListener("click", () => {
-    f.from = f.to = f.search = ""; f.watchOnly = false;
-    $("#pfFrom").value = ""; $("#pfTo").value = ""; $("#pfSearch").value = ""; $("#pfWatchOnly").checked = false;
+    f.search = ""; f.watchOnly = false;
+    f.to = dataMax; f.from = daysAgoIso(182, dataMax);
+    $("#pfFrom").value = f.from; $("#pfTo").value = f.to; $("#pfSearch").value = ""; $("#pfWatchOnly").checked = false;
+    markPfPreset(document.querySelector('#pfDatePresets button[data-days="182"]'));
     render();
   });
+  for (const b of document.querySelectorAll("#pfDatePresets button")) {
+    b.addEventListener("click", () => {
+      const days = Number(b.dataset.days);
+      f.to = days ? dataMax : ""; f.from = days ? daysAgoIso(days, dataMax) : "";
+      $("#pfFrom").value = f.from; $("#pfTo").value = f.to;
+      markPfPreset(b); render();
+    });
+  }
   $("#pfExportCsv").addEventListener("click", exportCsv);
   built = true;
+}
+
+function markPfPreset(active) {
+  for (const b of document.querySelectorAll("#pfDatePresets button")) b.classList.toggle("active", b === active);
 }
 
 export function showPref(params) {
