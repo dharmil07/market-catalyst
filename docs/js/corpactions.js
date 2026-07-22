@@ -1,35 +1,54 @@
 // Corporate Actions tab: a dated event calendar (no rupee values).
 import { state, getWatch, toggleWatch } from "./data.js";
 import * as charts from "./charts.js";
-import { $, el, fmtInt, fmtDate, downloadCsv, label } from "./util.js";
+import { $, el, fmtInt, fmtDate, downloadCsv, label, daysAgoIso } from "./util.js";
 import { writeHash } from "./hash.js";
 
 const f = { from: "", to: "", search: "", types: new Set(), watchOnly: false, sortKey: "ex_date", sortDir: 1 };
-let filtered = [], isActive = false, built = false;
+let filtered = [], isActive = false, built = false, dataMax = "";
 
 export function initCorp(params) {
+  const dates = state.corp.map((r) => r.ex_date).filter(Boolean).sort();
+  dataMax = dates[dates.length - 1] || "";
+
   f.from = params.cafrom || ""; f.to = params.cato || "";
   f.search = params.caq || "";
   f.types = new Set((params.catypes || "").split(",").filter(Boolean));
   f.watchOnly = params.cawatch === "1";
+
+  if (!f.from && !f.to) { f.to = dataMax; f.from = daysAgoIso(182, dataMax); }
 
   const types = [...new Set(state.corp.map((r) => r.category))].sort();
   buildChips("caTypeChips", types, f.types);
   $("#caFrom").value = f.from; $("#caTo").value = f.to; $("#caSearch").value = f.search;
   $("#caWatchOnly").checked = f.watchOnly;
 
-  $("#caFrom").addEventListener("change", (e) => { f.from = e.target.value; render(); });
-  $("#caTo").addEventListener("change", (e) => { f.to = e.target.value; render(); });
+  $("#caFrom").addEventListener("change", (e) => { f.from = e.target.value; markCaPreset(null); render(); });
+  $("#caTo").addEventListener("change", (e) => { f.to = e.target.value; markCaPreset(null); render(); });
   $("#caSearch").addEventListener("input", (e) => { f.search = e.target.value; render(); });
   $("#caWatchOnly").addEventListener("change", (e) => { f.watchOnly = e.target.checked; render(); });
   $("#caReset").addEventListener("click", () => {
-    f.from = f.to = f.search = ""; f.types.clear(); f.watchOnly = false;
+    f.search = ""; f.types.clear(); f.watchOnly = false;
+    f.to = dataMax; f.from = daysAgoIso(182, dataMax);
     for (const c of document.querySelectorAll("#caTypeChips .chip.on")) c.classList.remove("on");
-    $("#caFrom").value = ""; $("#caTo").value = ""; $("#caSearch").value = ""; $("#caWatchOnly").checked = false;
+    $("#caFrom").value = f.from; $("#caTo").value = f.to; $("#caSearch").value = ""; $("#caWatchOnly").checked = false;
+    markCaPreset(document.querySelector('#caDatePresets button[data-days="182"]'));
     render();
   });
+  for (const b of document.querySelectorAll("#caDatePresets button")) {
+    b.addEventListener("click", () => {
+      const days = Number(b.dataset.days);
+      f.to = days ? dataMax : ""; f.from = days ? daysAgoIso(days, dataMax) : "";
+      $("#caFrom").value = f.from; $("#caTo").value = f.to;
+      markCaPreset(b); render();
+    });
+  }
   $("#caExportCsv").addEventListener("click", exportCsv);
   built = true;
+}
+
+function markCaPreset(active) {
+  for (const b of document.querySelectorAll("#caDatePresets button")) b.classList.toggle("active", b === active);
 }
 
 export function showCorp(params) {
