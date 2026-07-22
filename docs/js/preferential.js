@@ -23,14 +23,14 @@ export function initPref(params) {
   $("#pfWatchOnly").checked = f.watchOnly;
 
   $("#pfFrom").addEventListener("change", (e) => { f.from = e.target.value; markPfPreset(null); render(); });
-  $("#pfTo").addEventListener("change", (e) => { f.to = e.target.value; markPfPreset(null); render(); });
+  $("#pfTo").addEventListener("change", (e) => {  = e.target.value; markPfPreset(null); render(); });
   $("#pfSearch").addEventListener("input", (e) => { f.search = e.target.value; render(); });
   $("#pfWatchOnly").addEventListener("change", (e) => { f.watchOnly = e.target.checked; render(); });
   $("#pfReset").addEventListener("click", () => {
     f.search = ""; f.watchOnly = false;
-    f.to = dataMax; f.from = daysAgoIso(182, dataMax);
+    f.to = ""; f.from = "";
     $("#pfFrom").value = f.from; $("#pfTo").value = f.to; $("#pfSearch").value = ""; $("#pfWatchOnly").checked = false;
-    markPfPreset(document.querySelector('#pfDatePresets button[data-days="182"]'));
+    markPfPreset(document.querySelector('#pfDatePresets button[data-days="0"]'));
     render();
   });
   for (const b of document.querySelectorAll("#pfDatePresets button")) {
