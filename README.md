@@ -1,4 +1,4 @@
-# Catalyst Tracker
+# Market Catalyst
 
 A free, self-hosted dashboard for **Indian insider-trading disclosures and corporate
 actions**, built from BSE & NSE exports. It replaces a manual Excel + Power Query
