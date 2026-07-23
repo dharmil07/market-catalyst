@@ -48,8 +48,9 @@
         <label>From <input type="date" id="dateFrom" /></label>
         <label>To <input type="date" id="dateTo" /></label>
         <div class="presets" id="datePresets">
-          <button data-days="30" class="active">30d</button>
-          <button data-days="90">90d</button>
+          <button data-days="7">1w</button>
+          <button data-days="30" class="active">1m</button>
+          <button data-days="90">3m</button>
           <button data-days="0">All</button>
         </div>
         <input type="search" id="search" placeholder="Search company or person…" />
@@ -150,6 +151,7 @@
         <label>Allotted from <input type="date" id="pfFrom" /></label>
         <label>To <input type="date" id="pfTo" /></label>
         <div class="presets" id="pfDatePresets">
+          <button data-days="91">3m</button>
           <button data-days="182" class="active">6m</button>
           <button data-days="365">1y</button>
           <button data-days="0">All</button>
