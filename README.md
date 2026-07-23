@@ -124,7 +124,6 @@ You only do this **once**. It needs a free GitHub account.
    gh api -X POST repos/:owner/market-catalyst/pages -f source.branch=main -f source.path=/docs
    ```
    (Or in the browser: repo **Settings → Pages → Source: Deploy from a branch → `main` / `/docs`**.)
-4. Your site appears at `https://<your-username>.github.io/market-catalyst/` within a minute or two.
 
 After this, every `./update.sh` pushes new data and the site redeploys automatically.
 
