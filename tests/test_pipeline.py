@@ -1,4 +1,4 @@
-"""Tests for the Catalyst Tracker pipeline. Runnable two ways:
+"""Tests for the Market Catalyst pipeline. Runnable two ways:
 
     python3 tests/run_tests.py     # stdlib runner, zero dependencies
     pytest                         # if installed
