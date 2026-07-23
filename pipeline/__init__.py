@@ -1,1 +1,1 @@
-"""Catalyst Tracker ingestion pipeline (standard-library only)."""
+"""Market Catalyst ingestion pipeline (standard-library only)."""
