@@ -117,14 +117,14 @@ You only do this **once**. It needs a free GitHub account.
    Choose: **GitHub.com → HTTPS → Login with a web browser**, then paste the code shown.
 2. **Create the repo and push** (run from this folder):
    ```bash
-   gh repo create catalyst-tracker --public --source=. --remote=origin --push
+   gh repo create market-catalyst --public --source=. --remote=origin --push
    ```
 3. **Turn on GitHub Pages** to serve the `docs/` folder:
    ```bash
-   gh api -X POST repos/:owner/catalyst-tracker/pages -f source.branch=main -f source.path=/docs
+   gh api -X POST repos/:owner/market-catalyst/pages -f source.branch=main -f source.path=/docs
    ```
    (Or in the browser: repo **Settings → Pages → Source: Deploy from a branch → `main` / `/docs`**.)
-4. Your site appears at `https://<your-username>.github.io/catalyst-tracker/` within a minute or two.
+4. Your site appears at `https://<your-username>.github.io/market-catalyst/` within a minute or two.
 
 After this, every `./update.sh` pushes new data and the site redeploys automatically.
 
