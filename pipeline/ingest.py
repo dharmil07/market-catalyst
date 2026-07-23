@@ -1,4 +1,4 @@
-"""Catalyst Tracker ingestion entry point.
+"""Market Catalyst ingestion entry point.
 
 Reads the raw exchange CSVs under data/raw/, runs the full normalize -> sanitize
 -> dedup -> cross-feed-merge pipeline, and writes the JSON that the static site
@@ -156,7 +156,7 @@ def _write(path: Path, data) -> None:
 
 def _print_summary(meta: dict) -> None:
     ins = meta["insider"]
-    print("Catalyst Tracker ingest complete")
+    print("Market Catalyst ingest complete")
     print(f"  Insider records:      {ins['records']}  {ins['by_source']}")
     print(f"  Served to dashboard:  {ins['served']['records']} "
           f"(last {ins['served']['window_months']} months, "
