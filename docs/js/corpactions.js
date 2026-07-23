@@ -158,5 +158,5 @@ function renderTable() {
 function exportCsv() {
   const rows = [["Company", "Symbol", "Security Code", "Purpose", "Type", "Ex-date", "Record date", "Payment date"]];
   for (const r of filtered) rows.push([r.company, r.symbol, r.security_code, r.purpose, label(r.category), r.ex_date || "", r.record_date || "", r.payment_date || ""]);
-  downloadCsv("catalyst_tracker_corporate_actions.csv", rows);
+  downloadCsv("market_catalyst_corporate_actions.csv", rows);
 }
